@@ -171,3 +171,24 @@ document.documentElement.classList.add('js');
   /* Первичный вызов на случай, если страница уже проскроллена */
   update();
 })();
+
+/* ── HERO PARALLAX ── */
+(function () {
+  const el = document.querySelector('.hero__phones');
+  if (!el) return;
+  if (window.matchMedia('(max-width: 1024px), (prefers-reduced-motion: reduce)').matches) return;
+
+  let ticking = false;
+
+  function update() {
+    el.style.transform = 'translateY(' + (window.scrollY * -0.22) + 'px)';
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
