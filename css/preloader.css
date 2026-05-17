@@ -1,0 +1,60 @@
+/* ============================================================
+   ITCLIMAT · PRELOADER — minimal
+   ============================================================ */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  /* fade-out */
+  opacity: 1;
+  transition: opacity .55s cubic-bezier(.4, 0, .2, 1);
+  pointer-events: all;
+}
+
+.preloader--exit {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── 3 точки ── */
+.preloader__dots {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preloader__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: plWave 1.5s ease-in-out infinite;
+}
+
+.preloader__dot:nth-child(1) {
+  background: #c060ff;
+  animation-delay: 0s;
+}
+.preloader__dot:nth-child(2) {
+  background: #8e00ff;
+  animation-delay: .18s;
+}
+.preloader__dot:nth-child(3) {
+  background: #b100c0;
+  animation-delay: .36s;
+}
+
+@keyframes plWave {
+  0%, 60%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: .45;
+  }
+  30% {
+    transform: translateY(-14px) scale(1.18);
+    opacity: 1;
+  }
+}
