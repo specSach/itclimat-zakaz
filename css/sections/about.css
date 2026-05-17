@@ -1,0 +1,121 @@
+/* ============================================================
+   ITCLIMAT · О НАС (блок на главной) + СТРАНИЦА О КОМПАНИИ
+   ============================================================ */
+
+/* ── About block (главная) ── */
+.about-block {
+  background: var(--c-bg-soft);
+  border-radius: var(--r-card);
+  padding: 52px 56px;
+  position: relative;
+  overflow: hidden;
+}
+.about-block::after {
+  content: '';
+  position: absolute;
+  right: -60px;
+  bottom: -80px;
+  width: 320px;
+  height: 280px;
+  background: url('../assets/background/bg-logo-1.svg') no-repeat center/contain;
+  opacity: .05;
+  pointer-events: none;
+}
+.about-block__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.1fr;
+  gap: 48px;
+}
+.about-block__col-title { font-size: 1.05rem; font-weight: 800; margin-bottom: 14px; color: var(--c-text); }
+.about-block__text      { font-size: 14px; color: var(--c-text-2); line-height: 1.75; margin-bottom: 18px; }
+.about-block__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--c-text);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background var(--t);
+}
+.about-block__cta:hover { background: #2a2a2a; }
+.about-block__tags { display: flex; flex-direction: column; gap: 10px; }
+.about-block__tag--why {
+  align-self: flex-start;
+  padding: 7px 16px;
+  border-radius: 30px;
+  background: rgba(128,1,255,.1);
+  color: var(--c-primary);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background var(--t), transform var(--t);
+}
+.about-block__tag--why:hover { background: rgba(128,1,255,.18); transform: translateY(-2px); }
+.about-block__tag--client {
+  align-self: flex-start;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: var(--gradient);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity var(--t), transform var(--t);
+}
+.about-block__tag--client:hover { opacity: .85; transform: translateY(-2px); }
+
+/* ── Company card (страница «О компании») ── */
+.company-card {
+  background: var(--c-card);
+  border-radius: var(--r-card);
+  padding: 52px;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 64px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+.company-card__left-label {
+  font-size: 1.35rem;
+  font-weight: 900;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.3;
+  margin-bottom: 22px;
+}
+.company-card__legal          { font-size: 12.5px; line-height: 1.9; color: var(--c-text-2); }
+.company-card__legal strong   { display: block; font-size: 1rem; font-weight: 800; color: var(--c-text); margin-bottom: 12px; }
+.company-card__legal a        { color: var(--c-primary); font-weight: 700; }
+.company-card__body           { font-size: 15px; line-height: 1.85; color: var(--c-text-2); }
+.company-card__body p         { margin-bottom: 18px; }
+.company-card__body p:last-child { margin-bottom: 0; }
+.company-card__body strong    { color: var(--c-text); font-weight: 700; }
+.company-card__list           { padding-left: 16px; }
+.company-card__list li        { margin-bottom: 4px; list-style: '— '; }
+
+/* ── Stats ── */
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+.stat-card {
+  background: var(--c-bg-soft);
+  border-radius: var(--r-card);
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  transition: transform var(--t-med), box-shadow var(--t-med);
+}
+.stat-card:hover { transform: translateY(-5px); }
+.stat-card__num {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 900;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 12px;
+  letter-spacing: -.04em;
+}
+.stat-card__lbl { font-size: 15px; font-weight: 600; color: var(--c-text-2); }

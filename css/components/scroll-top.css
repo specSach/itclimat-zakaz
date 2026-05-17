@@ -1,0 +1,57 @@
+/* ============================================================
+   ITCLIMAT · КНОПКА «НАВЕРХ»
+   ============================================================ */
+
+.scroll-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.06);
+  opacity: 0;
+  transform: translateY(18px) scale(.82);
+  transition: opacity .38s cubic-bezier(.4,0,.2,1),
+              transform .38s cubic-bezier(.4,0,.2,1),
+              box-shadow var(--t-med);
+  pointer-events: none;
+  z-index: 900;
+  color: #8301ff;
+  padding: 0;
+}
+.scroll-top--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.scroll-top:hover {
+  box-shadow: 0 8px 32px rgba(192,96,255,.25), 0 2px 8px rgba(0,0,0,.06);
+  transform: translateY(-3px) scale(1.06);
+}
+
+.scroll-top__ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+}
+.scroll-top__track    { fill: none; stroke: rgba(192,96,255,.15); stroke-width: 3; }
+.scroll-top__progress {
+  fill: none;
+  stroke: #c060ff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dashoffset .12s linear;
+}
+.scroll-top__arrow { position: relative; z-index: 1; flex-shrink: 0; }

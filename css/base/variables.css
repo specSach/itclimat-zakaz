@@ -1,0 +1,34 @@
+/* ============================================================
+   ITCLIMAT · ПЕРЕМЕННЫЕ + ШРИФТЫ
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --c-primary:   #8301ff;
+  --c-secondary: #b100c0;
+  --gradient:    linear-gradient(120deg, #b100c0 0%, #8301ff 100%);
+  --c-text:      #111111;
+  --c-text-2:    #3a3a3a;
+  --c-bg:        #ffffff;
+  --c-bg-soft:   #f7f4ff;
+  --c-card:      #f2f2f5;
+  --c-gray:      #888;
+  --c-border:    rgba(0,0,0,.07);
+
+  --r-card:  35px;
+  --r-btn:   20px;
+  --r-input: 12px;
+
+  --shadow-btn: 0 6px 28px rgba(128,1,255,.4);
+
+  --t:     .2s ease;
+  --t-med: .35s ease;
+
+  --w-content:   1280px;
+  --gap:         24px;
+  --pad-section: 88px;
+  --h-header:    72px;
+
+  --font: 'Manrope', system-ui, -apple-system, sans-serif;
+}

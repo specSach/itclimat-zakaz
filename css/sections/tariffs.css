@@ -1,0 +1,91 @@
+/* ============================================================
+   ITCLIMAT · ТАРИФЫ
+   ============================================================ */
+
+.tariffs-intro {
+  background: var(--c-bg-soft);
+  border-radius: var(--r-card);
+  padding: 36px 44px;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--c-primary);
+}
+.tariffs-intro__heading { font-size: 1rem; font-weight: 800; margin-bottom: 10px; }
+.tariffs-intro__text    { font-size: 14px; color: var(--c-text-2); line-height: 1.8; }
+
+.tariffs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  margin-bottom: 28px;
+}
+.tariffs-grid--4 { grid-template-columns: repeat(2, 1fr); }
+
+/* ── Tariff card ── */
+.t-card {
+  background: var(--c-card);
+  border-radius: var(--r-card);
+  padding: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0,0,0,.04);
+  transition: transform var(--t-med), box-shadow var(--t-med);
+}
+.t-card:hover { transform: translateY(-6px); }
+
+.t-card__bm { position: absolute; top: 0; right: 32px; width: 28px; height: 40px; }
+.t-card__bm svg { width: 100%; height: 100%; }
+
+.t-card__name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -.02em;
+  margin-bottom: 18px;
+  padding-right: 36px;
+}
+.t-card__features { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; flex: 1; }
+.t-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--c-text-2);
+}
+.t-card__dot {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gradient);
+  margin-top: 5px;
+}
+.t-card__prices       { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.t-card__price {
+  background: rgba(255,255,255,.9);
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--c-text);
+}
+.t-card__price-single {
+  font-size: 2rem;
+  font-weight: 900;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  letter-spacing: -.03em;
+}
+.t-card__note {
+  font-size: 11px;
+  color: var(--c-gray);
+  line-height: 1.65;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--c-border);
+}
+/* Длинный текст в кнопке переносится вместо переполнения */
+.t-card .btn--full { white-space: normal; text-align: center; line-height: 1.35; padding: 14px 18px; }

@@ -1,5 +1,5 @@
 /* ============================================================
-   ITCLIMAT · 404 PAGE — countdown & redirect
+   ITCLIMAT · СТРАНИЦА 404 — обратный отсчёт и редирект
    ============================================================ */
 (function () {
   'use strict';
@@ -17,12 +17,9 @@
   var interval = setInterval(function () {
     remaining -= 1;
 
-    /* Анимируем смену числа */
+    /* Анимируем смену числа — убираем класс, даём reflow, ставим обратно */
     countEl.classList.remove('err-timer__count--tick');
-
-    /* Небольшой reflow чтобы анимация сработала повторно */
     void countEl.offsetWidth;
-
     countEl.textContent = remaining;
     countEl.classList.add('err-timer__count--tick');
 

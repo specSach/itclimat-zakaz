@@ -1,0 +1,62 @@
+/* ============================================================
+   ITCLIMAT · СБРОС · ТИПОГРАФИКА · СЕТКА · КНОПКИ
+   ============================================================ */
+
+/* ── Сброс ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font);
+  color: var(--c-text);
+  background: var(--c-bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; font-size: inherit; }
+
+/* ── Типографика ── */
+h1 { font-size: clamp(2.1rem, 4.5vw, 3.8rem); font-weight: 900; line-height: 1.08; letter-spacing: -.03em; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.6rem);   font-weight: 800; line-height: 1.15; letter-spacing: -.02em; }
+h3 { font-size: clamp(1.15rem, 2vw, 1.45rem);  font-weight: 700; line-height: 1.25; }
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Сетка ── */
+.container    { max-width: var(--w-content); margin: 0 auto; padding: 0 28px; }
+.section      { padding: var(--pad-section) 0; }
+.section__title { margin-bottom: 48px; }
+
+/* ── Кнопки ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 34px;
+  border-radius: var(--r-btn);
+  font-weight: 700;
+  font-size: 15px;
+  transition: transform var(--t), box-shadow var(--t), background var(--t), border-color var(--t);
+  white-space: nowrap;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.btn--primary { background: var(--gradient); color: #fff; box-shadow: 0 2px 8px rgba(128,1,255,.12); }
+.btn--primary:hover { transform: scale(1.03); box-shadow: var(--shadow-btn); }
+
+.btn--outline { border-color: var(--c-primary); color: var(--c-primary); }
+.btn--outline:hover { background: var(--gradient); color: #fff; border-color: transparent; transform: scale(1.03); }
+
+.btn--ghost { border-color: rgba(255,255,255,.35); color: #fff; }
+.btn--ghost:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.6); }
+
+.btn--full { width: 100%; }

@@ -1,0 +1,20 @@
+/* ============================================================
+   ITCLIMAT · СИСТЕМА АНИМАЦИЙ (scroll reveal)
+   Без JS — всё видимо. С JS — .reveal скрывается,
+   IntersectionObserver добавляет .in-view и показывает.
+   ============================================================ */
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.js .reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal[data-d="1"] { transition-delay: .08s; }
+.js .reveal[data-d="2"] { transition-delay: .16s; }
+.js .reveal[data-d="3"] { transition-delay: .24s; }
+.js .reveal[data-d="4"] { transition-delay: .32s; }

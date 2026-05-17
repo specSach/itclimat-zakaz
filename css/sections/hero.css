@@ -1,0 +1,123 @@
+/* ============================================================
+   ITCLIMAT · HERO (главная) + PAGE HERO (подстраницы)
+   ============================================================ */
+
+/* ── Home hero ── */
+.hero {
+  padding-top: calc(var(--h-header) + 88px);
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.hero__bg-blur {
+  position: absolute;
+  right: -200px;
+  top: -200px;
+  width: 960px;
+  height: 960px;
+  pointer-events: none;
+  user-select: none;
+  opacity: .65;
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero__title { margin-bottom: 22px; }
+.hero__title .line-gradient {
+  display: block;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero__desc {
+  font-size: 16px;
+  color: var(--c-text-2);
+  line-height: 1.75;
+  margin-bottom: 38px;
+  max-width: 500px;
+}
+.hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.hero__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero__visual::before {
+  content: '';
+  position: absolute;
+  inset: -60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 52% 48%,
+    rgba(128,1,255,.18) 0%,
+    rgba(177,0,192,.09) 40%,
+    transparent 68%);
+  pointer-events: none;
+}
+.hero__phones {
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+.hero__phones-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 56px rgba(131,1,255,.28));
+}
+
+/* ── Page hero (подстраницы) ── */
+.page-hero {
+  background: var(--gradient);
+  padding: 56px 0 68px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/background/fon-1.png') center/cover no-repeat;
+  opacity: .12;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+.page-hero__blob {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  pointer-events: none;
+}
+.page-hero__blob-2 {
+  position: absolute;
+  left: -60px;
+  bottom: -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.05);
+  pointer-events: none;
+}
+.page-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.page-hero__title { color: #fff; }
+.page-hero__deco  { flex-shrink: 0; opacity: .3; }

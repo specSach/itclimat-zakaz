@@ -1,0 +1,103 @@
+/* ============================================================
+   ITCLIMAT · АДАПТИВНЫЕ СТИЛИ
+   Все медиазапросы собраны в одном месте.
+   ============================================================ */
+
+/* ── 1100px ── */
+@media (max-width: 1100px) {
+  .header__nav-link { padding: 7px 9px; font-size: 13px; }
+  .footer__grid     { grid-template-columns: 1.3fr 1fr 1fr; }
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+  :root { --pad-section: 64px; }
+
+  /* Header */
+  .header__nav, .header__phone { display: none; }
+  .header__burger { display: flex; }
+
+  /* Hero */
+  .hero__inner  { grid-template-columns: 1fr; }
+  .hero__desc   { max-width: 100%; }
+  .hero__visual { display: none; }
+
+  /* Page hero */
+  .page-hero__deco { display: none; }
+
+  /* Sections */
+  .about-block__grid  { grid-template-columns: 1fr 1fr; }
+  .services-grid      { grid-template-columns: repeat(2, 1fr); }
+  .tariffs-grid       { grid-template-columns: repeat(2, 1fr); }
+  .cta-block          { flex-direction: column; text-align: center; padding: 44px 36px; }
+  .company-card       { grid-template-columns: 1fr; gap: 32px; }
+  .stats-grid         { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Footer */
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+
+  /* Policy */
+  .policy-layout { grid-template-columns: 1fr; }
+  .policy-toc    { position: static; }
+
+  /* IT activity */
+  .activity-hero-grid  { grid-template-columns: 1fr; }
+  .activity-hero-left  { padding: 36px 32px; }
+  .activity-hero-right { padding: 36px 32px; }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+  :root { --pad-section: 52px; --gap: 16px; }
+
+  .about-block      { padding: 32px 28px; }
+  .about-block__grid { grid-template-columns: 1fr; }
+  .services-wrap    { padding: 28px 20px; }
+  .services-grid    { grid-template-columns: 1fr; }
+  .tariffs-grid     { grid-template-columns: 1fr; }
+  .company-card     { padding: 30px 28px; }
+  .docs-group       { padding: 28px 24px; }
+
+  .footer__grid   { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+  .footer         { width: calc(100% - 32px); border-radius: 22px; }
+
+  .policy-section   { padding: 24px 20px; }
+  .policy-doc__meta { padding: 20px 22px; gap: 16px; }
+
+  .support-grid        { grid-template-columns: 1fr; }
+  .support-card        { padding: 24px; }
+  .activity-hero-left  { padding: 28px 22px; }
+  .activity-hero-right { padding: 28px 22px; }
+}
+
+/* ── 640px ── */
+@media (max-width: 640px) {
+  .contact-card--wide { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* ── 600px ── */
+@media (max-width: 600px) {
+  .tariffs-grid--4 { grid-template-columns: 1fr; }
+}
+
+/* ── 576px ── */
+@media (max-width: 576px) {
+  :root { --h-header: 58px; }
+
+  .header           { top: 6px; width: calc(100% - 20px); border-radius: 15px; }
+  .header__inner    { padding: 7px 0; gap: 10px; }
+  .header__logo-img { width: 42px; height: 42px; }
+  .header__burger   { width: 38px; height: 38px; }
+
+  .hero        { padding-top: calc(var(--h-header) + 60px); padding-bottom: 60px; }
+  .btn         { padding: 13px 24px; font-size: 14px; }
+  .page-hero   { padding: 40px 0 52px; }
+  .cta-block   { padding: 36px 24px; }
+  .contact-card { padding: 28px; }
+  .stat-card   { padding: 28px; }
+
+  .footer      { width: calc(100% - 20px); border-radius: 16px; margin-bottom: 14px; padding: 44px 0 26px; }
+
+  .scroll-top  { bottom: 18px; right: 16px; width: 44px; height: 44px; }
+}

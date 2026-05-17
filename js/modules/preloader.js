@@ -1,12 +1,13 @@
 /* ============================================================
-   ITCLIMAT · PRELOADER — minimal
-   Синхронный скрипт в начале <body> — появляется мгновенно.
+   ITCLIMAT · ПРЕЛОАДЕР
+   Синхронный скрипт — подключается первым в <body>,
+   появляется мгновенно до загрузки остального контента.
    Скрывается после window.load + минимальная задержка.
    ============================================================ */
 (function () {
   'use strict';
 
-  /* Минимальное время показа — чтобы не мелькал на быстрых соединениях */
+  /* Минимальное время показа — чтобы не мелькал на быстром соединении */
   var MIN_DISPLAY = 800;
   var startTime   = Date.now();
   var hidden      = false;
@@ -39,14 +40,9 @@
     var wait    = Math.max(0, MIN_DISPLAY - elapsed);
 
     setTimeout(function () {
-      /* Запускаем fade-out через CSS transition */
       el.classList.add('preloader--exit');
-
-      /* Удаляем из DOM после окончания перехода */
       el.addEventListener('transitionend', cleanup, { once: true });
-
-      /* Страховка — если transitionend не сработал */
-      setTimeout(cleanup, 700);
+      setTimeout(cleanup, 700); /* страховка */
     }, wait);
   }
 
