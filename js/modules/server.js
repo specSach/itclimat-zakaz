@@ -1,7 +1,7 @@
 /**
  * ITCLIMAT · локальный dev-сервер
  *
- * Запуск:  node server.js
+ * Запуск:  node js/modules/server.js
  * Сайт:    http://localhost:3000
  *
  * Отдаёт статические файлы как есть.
@@ -13,7 +13,7 @@ const fs   = require('fs');
 const path = require('path');
 
 const PORT = 3000;
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, '../..'); /* корень проекта, а не папка js/modules/ */
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
