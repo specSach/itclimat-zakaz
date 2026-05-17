@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 — Страница не найдена · ИТ Климат</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="stylesheet" href="css/404.css"/>
+</head>
+<body>
+
+  <!-- Декоративные блобы -->
+  <div class="blob blob--1" aria-hidden="true"></div>
+  <div class="blob blob--2" aria-hidden="true"></div>
+  <div class="blob blob--3" aria-hidden="true"></div>
+
+  <main class="page" role="main">
+
+    <!-- Код ошибки -->
+    <p class="err-code" aria-hidden="true">404</p>
+
+    <!-- Заголовок -->
+    <h1 class="err-title">Страница не найдена</h1>
+
+    <!-- Описание -->
+    <p class="err-desc">
+      Возможно, она была удалена, перемещена<br>или никогда не существовала.
+    </p>
+
+    <!-- Таймер обратного отсчёта -->
+    <div class="err-timer" role="status" aria-live="polite" aria-label="Автоматический переход на главную">
+      <span class="err-timer__count" id="countdown">5</span>
+      <span>Переход на главную через несколько секунд</span>
+    </div>
+
+    <!-- Кнопка -->
+    <a href="index.html" class="err-btn" id="homeBtn" aria-label="Перейти на главную страницу">
+      На главную
+      <svg class="err-btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+  </main>
+
+  <script src="js/404.js"></script>
+</body>
+</html>
