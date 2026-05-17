@@ -1,299 +1,329 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Услуги — ИТ Климат</title>
-  <meta name="description" content="Разработка инженерного ПО, программирование ПЛК, интерфейсы дисплеев, SCADA-решения и автоматизация климатических систем."/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <meta name="description"
+    content="Разработка инженерного ПО, программирование ПЛК, интерфейсы дисплеев, SCADA-решения и автоматизация климатических систем." />
+  <link rel="stylesheet" href="css/main.css" />
   <script src="js/init.js"></script>
 </head>
+
 <body>
-<script src="js/modules/preloader.js"></script>
+  <script src="js/modules/preloader.js"></script>
 
-<!-- ═══════════════════ HEADER ═══════════════════ -->
-<header class="header" role="banner">
-  <div class="container">
-    <div class="header__inner">
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
 
-      <a href="index.html" class="header__logo" aria-label="ИТ Климат — на главную">
-        <img src="assets/logo/logo-svg.svg" class="header__logo-img" alt="" aria-hidden="true"/>
-        <span class="header__logo-text">ИТ Климат</span>
+        <a href="index.html" class="header__logo" aria-label="ИТ Климат — на главную">
+          <img src="assets/logo/logo-svg.svg" class="header__logo-img" alt="" aria-hidden="true" />
+        </a>
+
+        <nav class="header__nav" role="navigation" aria-label="Основное меню">
+          <a href="index.html" class="header__nav-link">Главная</a>
+          <a href="services.html" class="header__nav-link header__nav-link--active">Услуги</a>
+          <a href="tariffs.html" class="header__nav-link">Тарифы</a>
+          <a href="about.html" class="header__nav-link">О компании</a>
+          <a href="docs.html" class="header__nav-link">Документация</a>
+          <a href="it-activity.html" class="header__nav-link">Наша IT-деятельность</a>
+        </nav>
+
+        <a href="tel:+79656095282" class="header__phone">+7 (965) 609-52-82</a>
+
+        <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
+  <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Меню навигации">
+    <img src="assets/background/bg-blur.svg" class="mobile-menu__bg-blur" aria-hidden="true" alt="" />
+    <div class="mobile-menu__top">
+      <a href="index.html" class="mobile-menu__logo-link" aria-label="ИТ Климат — на главную">
+        <img src="assets/logo/logo-svg.svg" class="mobile-menu__logo-img" alt="" aria-hidden="true" />
+        <span class="mobile-menu__logo-text">ИТ Климат</span>
       </a>
-
-      <nav class="header__nav" role="navigation" aria-label="Основное меню">
-        <a href="index.html"    class="header__nav-link">Главная</a>
-        <a href="services.html" class="header__nav-link header__nav-link--active">Услуги</a>
-        <a href="tariffs.html"  class="header__nav-link">Тарифы</a>
-        <a href="about.html"    class="header__nav-link">О компании</a>
-        <a href="docs.html"     class="header__nav-link">Документация</a>
-        <a href="it-activity.html"             class="header__nav-link">Наша IT-деятельность</a>
-      </nav>
-
-      <a href="tel:+79656095282" class="header__phone">+7 (965) 609-52-82</a>
-
-      <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
+      <button class="mobile-menu__close" aria-label="Закрыть меню">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
       </button>
     </div>
-  </div>
-</header>
-
-<!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
-<nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Меню навигации">
-  <img src="assets/background/bg-blur.svg" class="mobile-menu__bg-blur" aria-hidden="true" alt=""/>
-  <div class="mobile-menu__top">
-    <a href="index.html" class="mobile-menu__logo-link" aria-label="ИТ Климат — на главную">
-      <img src="assets/logo/logo-svg.svg" class="mobile-menu__logo-img" alt="" aria-hidden="true"/>
-      <span class="mobile-menu__logo-text">ИТ Климат</span>
-    </a>
-    <button class="mobile-menu__close" aria-label="Закрыть меню">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-        <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-      </svg>
-    </button>
-  </div>
-  <div class="mobile-menu__nav">
-    <a href="index.html"    class="mobile-menu__link">Главная</a>
-    <a href="services.html" class="mobile-menu__link">Услуги</a>
-    <a href="tariffs.html"  class="mobile-menu__link">Тарифы</a>
-    <a href="about.html"    class="mobile-menu__link">О компании</a>
-    <a href="docs.html"     class="mobile-menu__link">Документация</a>
-    <a href="it-activity.html"             class="mobile-menu__link">Наша IT-деятельность</a>
-  </div>
-  <div class="mobile-menu__bottom">
-    <a href="tel:+79656095282" class="mobile-menu__phone">+7 (965) 609-52-82</a>
-    <a href="mailto:info@itclimat.ru" class="mobile-menu__email">info@itclimat.ru</a>
-    <div class="mobile-menu__policies">
-      <a href="pd.html"      class="mobile-menu__policy">Политика обработки ПД</a>
-      <a href="privacy.html" class="mobile-menu__policy">Политика конфиденциальности</a>
-      <a href="cookie.html"  class="mobile-menu__policy">Cookie</a>
+    <div class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__link">Главная</a>
+      <a href="services.html" class="mobile-menu__link">Услуги</a>
+      <a href="tariffs.html" class="mobile-menu__link">Тарифы</a>
+      <a href="about.html" class="mobile-menu__link">О компании</a>
+      <a href="docs.html" class="mobile-menu__link">Документация</a>
+      <a href="it-activity.html" class="mobile-menu__link">Наша IT-деятельность</a>
     </div>
-  </div>
-</nav>
-
-<!-- ═══════════════════ MAIN ═══════════════════ -->
-<main>
-
-  <!-- ── BREADCRUMBS ── -->
-  <nav class="breadcrumbs" aria-label="Навигационные цепочки">
-    <div class="container">
-      <ol class="breadcrumbs__list">
-        <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
-        <li class="breadcrumbs__item"><span class="breadcrumbs__current">Услуги</span></li>
-      </ol>
+    <div class="mobile-menu__bottom">
+      <a href="tel:+79656095282" class="mobile-menu__phone">+7 (965) 609-52-82</a>
+      <a href="mailto:info@itclimat.ru" class="mobile-menu__email">info@itclimat.ru</a>
+      <div class="mobile-menu__policies">
+        <a href="pd.html" class="mobile-menu__policy">Политика обработки ПД</a>
+        <a href="cookie.html" class="mobile-menu__policy">Cookie</a>
+      </div>
     </div>
   </nav>
 
-  <!-- ── PAGE HERO ── -->
-  <section class="page-hero" aria-labelledby="ph-title">
-    <div class="page-hero__blob" aria-hidden="true"></div>
-    <div class="page-hero__blob-2" aria-hidden="true"></div>
+  <!-- ═══════════════════ MAIN ═══════════════════ -->
+  <main>
+
+    <!-- ── BREADCRUMBS ── -->
+    <nav class="breadcrumbs" aria-label="Навигационные цепочки">
+      <div class="container">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Услуги</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero" aria-labelledby="ph-title">
+      <div class="page-hero__blob" aria-hidden="true"></div>
+      <div class="page-hero__blob-2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <div>
+            <h1 class="page-hero__title" id="ph-title">Чем занимаемся?</h1>
+            <p style="color:rgba(255,255,255,.8);margin-top:14px;font-size:16px;max-width:540px;line-height:1.7">
+              Разрабатываем инженерное ПО, программируем ПЛК и создаём интеллектуальные решения для автоматизации
+              климатических и инженерных систем.
+            </p>
+          </div>
+          <div class="page-hero__deco" aria-hidden="true">
+            <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+              <circle cx="80" cy="80" r="72" stroke="white" stroke-width="1.5" stroke-dasharray="5 5" opacity=".35" />
+              <circle cx="80" cy="80" r="50" stroke="white" stroke-width="1" opacity=".2" />
+              <circle cx="80" cy="80" r="26" fill="rgba(255,255,255,.1)" />
+              <rect x="62" y="62" width="36" height="36" rx="8" stroke="white" stroke-width="1.5" fill="none"
+                opacity=".5" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── УСЛУГИ ── -->
+    <section class="section" aria-labelledby="svc-h2">
+      <div class="container">
+        <h2 class="section__title reveal" id="svc-h2">Наши услуги</h2>
+        <div class="services-wrap">
+          <div class="services-grid">
+
+            <article class="svc-card reveal" data-d="1">
+              <div class="svc-card__icon">
+                <img src="assets/icons/pc-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">разрабатываем Программное Обеспечение для ЭВМ и ПЛК для автоматизации инженерных
+                систем</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="2">
+              <div class="svc-card__icon">
+                <img src="assets/icons/settings-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">проводим тестирование и отладку оборудования и программного обеспечения перед
+                вводом в эксплуатацию</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="3">
+              <div class="svc-card__icon">
+                <img src="assets/icons/image-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">разрабатываем интерфейсы и дизайн дисплеев для визуализации технологических
+                процессов и аналитики</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="4">
+              <div class="svc-card__icon">
+                <img src="assets/icons/phone-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">создаём программное обеспечение для сенсорных операторских панелей и систем
+                управления</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="1">
+              <div class="svc-card__icon">
+                <img src="assets/icons/taimer-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">разрабатываем программные алгоритмы, логику работы ПЛК и интеграцию ресурсов
+                инженерных систем</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="2">
+              <div class="svc-card__icon">
+                <img src="assets/icons/link-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">создаём инженерное ПО и SCADA-решения для оперативного контроля и мониторинга
+                технологических процессов в реальном времени</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ПОДРОБНЕЕ ОБ УСЛУГАХ ── -->
+    <section class="section" aria-labelledby="detail-h2" style="padding-top:0">
+      <div class="container">
+        <h2 class="section__title reveal" id="detail-h2">Подробнее об услугах</h2>
+
+        <div style="display:flex;flex-direction:column;gap:20px">
+
+          <div class="company-card reveal">
+            <div>
+              <p class="company-card__left-label">ПО для ЭВМ и ПЛК</p>
+              <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Промышленная автоматизация
+              </p>
+            </div>
+            <div class="company-card__body">
+              <p>Разрабатываем специализированное программное обеспечение для персональных компьютеров и программируемых
+                логических контроллеров (ПЛК). Наши решения охватывают весь цикл: от проектирования архитектуры до
+                развёртывания и поддержки.</p>
+              <p>Работаем с ведущими платформами ПЛК и промышленными протоколами: <strong>Modbus, BACnet, OPC UA, MQTT,
+                  KNX</strong>. Разрабатываем под нужды климатики, вентиляции, холодоснабжения и теплоснабжения.</p>
+            </div>
+          </div>
+
+          <div class="company-card reveal">
+            <div>
+              <p class="company-card__left-label">Тестирование и отладка</p>
+              <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Качество и надёжность</p>
+            </div>
+            <div class="company-card__body">
+              <p>Проводим комплексное тестирование оборудования и программного обеспечения перед вводом в эксплуатацию.
+                Выявляем аппаратные и программные несоответствия на ранних стадиях, что существенно снижает риски и
+                стоимость устранения ошибок.</p>
+              <p>Наша методология включает <strong>функциональное, нагрузочное, регрессионное тестирование</strong>, а
+                также интеграционные проверки совместимости оборудования и ПО.</p>
+            </div>
+          </div>
+
+          <div class="company-card reveal">
+            <div>
+              <p class="company-card__left-label">Интерфейсы дисплеев</p>
+              <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Визуализация процессов</p>
+            </div>
+            <div class="company-card__body">
+              <p>Создаём удобные и информативные интерфейсы для операторских дисплеев промышленного оборудования.
+                Проектируем мнемосхемы, графики, таблицы данных и системы аварийной сигнализации — всё для максимальной
+                наглядности технологического процесса.</p>
+              <p>Используем принципы <strong>UX/UI для промышленного применения</strong>: минимизация когнитивной
+                нагрузки, быстрый доступ к критичным параметрам, интуитивное управление.</p>
+            </div>
+          </div>
+
+          <div class="company-card reveal">
+            <div>
+              <p class="company-card__left-label">Операторские панели и SCADA</p>
+              <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Управление и диспетчеризация
+              </p>
+            </div>
+            <div class="company-card__body">
+              <p>Разрабатываем ПО для сенсорных операторских панелей (HMI) и полноценные SCADA-системы для
+                диспетчеризации климатического и инженерного оборудования. Обеспечиваем сбор, хранение и анализ данных в
+                реальном времени.</p>
+              <p>Наши SCADA-решения поддерживают <strong>веб-доступ, мобильные приложения (Android/iOS)</strong>,
+                отчётность, архивирование событий и интеграцию с корпоративными системами.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="section" aria-label="Связаться с нами" style="padding-top:0">
+      <div class="container">
+        <div class="cta-block reveal">
+          <p class="cta-block__title">Готовы обсудить ваш проект?</p>
+          <a href="mailto:info@itclimat.ru" class="btn btn--ghost"
+            style="display:inline-flex;align-items:center;gap:14px">
+            Написать нам
+            <span
+              style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="page-hero__inner">
+      <div class="footer__grid">
         <div>
-          <h1 class="page-hero__title" id="ph-title">Чем занимаемся?</h1>
-          <p style="color:rgba(255,255,255,.8);margin-top:14px;font-size:16px;max-width:540px;line-height:1.7">
-            Разрабатываем инженерное ПО, программируем ПЛК и создаём интеллектуальные решения для автоматизации климатических и инженерных систем.
-          </p>
+          <div class="footer__brand">
+            <img src="assets/logo/logo-svg.svg" alt="" aria-hidden="true"
+              style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0" />
+            <span>ИТ Климат</span>
+          </div>
+          <div class="footer__info">
+            <p>Общество с ограниченной ответственностью «ИТ Климат»</p>
+            <p>Юридический адрес: 420054, Республика Татарстан, г. Казань, ул. Авангардная, д.89, оф. 38</p>
+            <p>ИНН/КПП: 1684008470 / 168401001</p>
+            <p>ОГРН: 1221600086729 от 26.10.2022 &nbsp;·&nbsp; ОКВЭД: 62.01</p>
+            <p style="margin-top:10px">
+              <a href="tel:+79656095282">+7 (965) 609-52-82</a>&nbsp;&nbsp;
+              <a href="mailto:info@itclimat.ru">info@itclimat.ru</a>
+            </p>
+          </div>
         </div>
-        <div class="page-hero__deco" aria-hidden="true">
-          <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
-            <circle cx="80" cy="80" r="72" stroke="white" stroke-width="1.5" stroke-dasharray="5 5" opacity=".35"/>
-            <circle cx="80" cy="80" r="50" stroke="white" stroke-width="1" opacity=".2"/>
-            <circle cx="80" cy="80" r="26" fill="rgba(255,255,255,.1)"/>
-            <rect x="62" y="62" width="36" height="36" rx="8" stroke="white" stroke-width="1.5" fill="none" opacity=".5"/>
-          </svg>
+        <div>
+          <p class="footer__col-title">ИТ Климат</p>
+          <nav class="footer__links">
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="services.html" class="footer__link">Услуги</a>
+            <a href="tariffs.html" class="footer__link">Тарифы</a>
+            <a href="about.html" class="footer__link">Кто мы такие?</a>
+            <a href="about.html#contacts" class="footer__link">Контакты</a>
+          </nav>
         </div>
+        <div>
+          <p class="footer__col-title">Продукты</p>
+          <nav class="footer__links">
+            <a href="tariffs.html" class="footer__link">КлиматПодбор</a>
+            <a href="tariffs.html" class="footer__link">КлиматПлюс</a>
+            <a href="tariffs.html" class="footer__link">КлиматКУБ</a>
+            <a href="tariffs.html" class="footer__link">КлиматУни</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Документация</p>
+          <nav class="footer__links">
+            <a href="pd.html" class="footer__link">Политика обработки ПД</a>
+            <a href="cookie.html" class="footer__link">Cookie</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 ООО «ИТ Климат». Все права защищены.</span>
+        <span>ИНН 1684008470</span>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- ── УСЛУГИ ── -->
-  <section class="section" aria-labelledby="svc-h2">
-    <div class="container">
-      <h2 class="section__title reveal" id="svc-h2">Наши услуги</h2>
-      <div class="services-wrap">
-        <div class="services-grid">
-
-          <article class="svc-card reveal" data-d="1">
-            <div class="svc-card__icon">
-              <img src="assets/icons/pc-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">разрабатываем Программное Обеспечение для ЭВМ и ПЛК для автоматизации инженерных систем</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="2">
-            <div class="svc-card__icon">
-              <img src="assets/icons/settings-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">проводим тестирование и отладку оборудования и программного обеспечения перед вводом в эксплуатацию</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="3">
-            <div class="svc-card__icon">
-              <img src="assets/icons/image-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">разрабатываем интерфейсы и дизайн дисплеев для визуализации технологических процессов и аналитики</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="4">
-            <div class="svc-card__icon">
-              <img src="assets/icons/phone-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">создаём программное обеспечение для сенсорных операторских панелей и систем управления</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="1">
-            <div class="svc-card__icon">
-              <img src="assets/icons/taimer-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">разрабатываем программные алгоритмы, логику работы ПЛК и интеграцию ресурсов инженерных систем</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="2">
-            <div class="svc-card__icon">
-              <img src="assets/icons/link-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">создаём инженерное ПО и SCADA-решения для оперативного контроля и мониторинга технологических процессов в реальном времени</p>
-          </article>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ПОДРОБНЕЕ ОБ УСЛУГАХ ── -->
-  <section class="section" aria-labelledby="detail-h2" style="padding-top:0">
-    <div class="container">
-      <h2 class="section__title reveal" id="detail-h2">Подробнее об услугах</h2>
-
-      <div style="display:flex;flex-direction:column;gap:20px">
-
-        <div class="company-card reveal">
-          <div>
-            <p class="company-card__left-label">ПО для ЭВМ и ПЛК</p>
-            <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Промышленная автоматизация</p>
-          </div>
-          <div class="company-card__body">
-            <p>Разрабатываем специализированное программное обеспечение для персональных компьютеров и программируемых логических контроллеров (ПЛК). Наши решения охватывают весь цикл: от проектирования архитектуры до развёртывания и поддержки.</p>
-            <p>Работаем с ведущими платформами ПЛК и промышленными протоколами: <strong>Modbus, BACnet, OPC UA, MQTT, KNX</strong>. Разрабатываем под нужды климатики, вентиляции, холодоснабжения и теплоснабжения.</p>
-          </div>
-        </div>
-
-        <div class="company-card reveal">
-          <div>
-            <p class="company-card__left-label">Тестирование и отладка</p>
-            <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Качество и надёжность</p>
-          </div>
-          <div class="company-card__body">
-            <p>Проводим комплексное тестирование оборудования и программного обеспечения перед вводом в эксплуатацию. Выявляем аппаратные и программные несоответствия на ранних стадиях, что существенно снижает риски и стоимость устранения ошибок.</p>
-            <p>Наша методология включает <strong>функциональное, нагрузочное, регрессионное тестирование</strong>, а также интеграционные проверки совместимости оборудования и ПО.</p>
-          </div>
-        </div>
-
-        <div class="company-card reveal">
-          <div>
-            <p class="company-card__left-label">Интерфейсы дисплеев</p>
-            <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Визуализация процессов</p>
-          </div>
-          <div class="company-card__body">
-            <p>Создаём удобные и информативные интерфейсы для операторских дисплеев промышленного оборудования. Проектируем мнемосхемы, графики, таблицы данных и системы аварийной сигнализации — всё для максимальной наглядности технологического процесса.</p>
-            <p>Используем принципы <strong>UX/UI для промышленного применения</strong>: минимизация когнитивной нагрузки, быстрый доступ к критичным параметрам, интуитивное управление.</p>
-          </div>
-        </div>
-
-        <div class="company-card reveal">
-          <div>
-            <p class="company-card__left-label">Операторские панели и SCADA</p>
-            <p style="font-size:13px;color:var(--c-gray);line-height:1.7;margin-top:8px">Управление и диспетчеризация</p>
-          </div>
-          <div class="company-card__body">
-            <p>Разрабатываем ПО для сенсорных операторских панелей (HMI) и полноценные SCADA-системы для диспетчеризации климатического и инженерного оборудования. Обеспечиваем сбор, хранение и анализ данных в реальном времени.</p>
-            <p>Наши SCADA-решения поддерживают <strong>веб-доступ, мобильные приложения (Android/iOS)</strong>, отчётность, архивирование событий и интеграцию с корпоративными системами.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA ── -->
-  <section class="section" aria-label="Связаться с нами" style="padding-top:0">
-    <div class="container">
-      <div class="cta-block reveal">
-        <p class="cta-block__title">Готовы обсудить ваш проект?</p>
-        <a href="mailto:info@itclimat.ru" class="btn btn--ghost" style="display:inline-flex;align-items:center;gap:14px">
-          Написать нам
-          <span style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ═══════════════════ FOOTER ═══════════════════ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <div class="footer__brand">
-          <img src="assets/logo/logo-svg.svg" alt="" aria-hidden="true" style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0"/>
-          <span>ИТ Климат</span>
-        </div>
-        <div class="footer__info">
-          <p>Общество с ограниченной ответственностью «ИТ Климат»</p>
-          <p>Юридический адрес: 420054, Республика Татарстан, г. Казань, ул. Авангардная, д.89, оф. 38</p>
-          <p>ИНН/КПП: 1684008470 / 168401001</p>
-          <p>ОГРН: 1221600086729 от 26.10.2022 &nbsp;·&nbsp; ОКВЭД: 62.01</p>
-          <p style="margin-top:10px">
-            <a href="tel:+79656095282">+7 (965) 609-52-82</a>&nbsp;&nbsp;
-            <a href="mailto:info@itclimat.ru">info@itclimat.ru</a>
-          </p>
-        </div>
-      </div>
-      <div>
-        <p class="footer__col-title">ИТ Климат</p>
-        <nav class="footer__links">
-          <a href="index.html"    class="footer__link">Главная</a>
-          <a href="services.html" class="footer__link">Услуги</a>
-          <a href="tariffs.html"  class="footer__link">Тарифы</a>
-          <a href="about.html"    class="footer__link">Кто мы такие?</a>
-          <a href="about.html#contacts" class="footer__link">Контакты</a>
-        </nav>
-      </div>
-      <div>
-        <p class="footer__col-title">Продукты</p>
-        <nav class="footer__links">
-          <a href="tariffs.html" class="footer__link">КлиматПодбор</a>
-          <a href="tariffs.html" class="footer__link">КлиматПлюс</a>
-          <a href="tariffs.html" class="footer__link">КлиматКУБ</a>
-          <a href="tariffs.html" class="footer__link">КлиматУни</a>
-        </nav>
-      </div>
-      <div>
-        <p class="footer__col-title">Документация</p>
-        <nav class="footer__links">
-          <a href="pd.html"      class="footer__link">Политика обработки ПД</a>
-          <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
-          <a href="cookie.html"  class="footer__link">Cookie</a>
-        </nav>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <span>© 2024 ООО «ИТ Климат». Все права защищены.</span>
-      <span>ИНН 1684008470</span>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
-<script type="module" src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    crossorigin="anonymous"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

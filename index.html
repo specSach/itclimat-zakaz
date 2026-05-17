@@ -1,369 +1,412 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ИТ Климат — Персональный поставщик интеллектуальных решений для климата</title>
-  <meta name="description" content="ИТ Климат — российская компания, специализирующаяся на разработке инженерного ПО, программировании ПЛК и создании интеллектуальных решений для автоматизации климатических и инженерных систем."/>
-  <meta property="og:title" content="ИТ Климат — Интеллектуальные решения для климата"/>
-  <meta property="og:type" content="website"/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <meta name="description"
+    content="ИТ Климат — российская компания, специализирующаяся на разработке инженерного ПО, программировании ПЛК и создании интеллектуальных решений для автоматизации климатических и инженерных систем." />
+  <meta property="og:title" content="ИТ Климат — Интеллектуальные решения для климата" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/main.css" />
   <script src="js/init.js"></script>
 </head>
+
 <body>
-<script src="js/modules/preloader.js"></script>
+  <script src="js/modules/preloader.js"></script>
 
-<!-- ═══════════════════ HEADER ═══════════════════ -->
-<header class="header" role="banner">
-  <div class="container">
-    <div class="header__inner">
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
 
-      <a href="index.html" class="header__logo" aria-label="ИТ Климат — на главную">
-        <img src="assets/logo/logo-svg.svg" class="header__logo-img" alt="" aria-hidden="true"/>
-        <span class="header__logo-text">ИТ Климат</span>
+        <a href="index.html" class="header__logo" aria-label="ИТ Климат — на главную">
+          <img src="assets/logo/logo-svg.svg" class="header__logo-img" alt="" aria-hidden="true" />
+        </a>
+
+        <nav class="header__nav" role="navigation" aria-label="Основное меню">
+          <a href="index.html" class="header__nav-link">Главная</a>
+          <a href="services.html" class="header__nav-link">Услуги</a>
+          <a href="tariffs.html" class="header__nav-link">Тарифы</a>
+          <a href="about.html" class="header__nav-link">О компании</a>
+          <a href="docs.html" class="header__nav-link">Документация</a>
+          <a href="it-activity.html" class="header__nav-link">Наша IT-деятельность</a>
+        </nav>
+
+        <a href="tel:+79656095282" class="header__phone">+7 (965) 609-52-82</a>
+
+        <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
+  <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Меню навигации">
+    <img src="assets/background/bg-blur.svg" class="mobile-menu__bg-blur" aria-hidden="true" alt="" />
+    <div class="mobile-menu__top">
+      <a href="index.html" class="mobile-menu__logo-link" aria-label="ИТ Климат — на главную">
+        <img src="assets/logo/logo-svg.svg" class="mobile-menu__logo-img" alt="" aria-hidden="true" />
+        <span class="mobile-menu__logo-text">ИТ Климат</span>
       </a>
-
-      <nav class="header__nav" role="navigation" aria-label="Основное меню">
-        <a href="index.html"   class="header__nav-link">Главная</a>
-        <a href="services.html" class="header__nav-link">Услуги</a>
-        <a href="tariffs.html"  class="header__nav-link">Тарифы</a>
-        <a href="about.html"    class="header__nav-link">О компании</a>
-        <a href="docs.html"     class="header__nav-link">Документация</a>
-        <a href="it-activity.html"             class="header__nav-link">Наша IT-деятельность</a>
-      </nav>
-
-      <a href="tel:+79656095282" class="header__phone">+7 (965) 609-52-82</a>
-
-      <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
+      <button class="mobile-menu__close" aria-label="Закрыть меню">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
       </button>
     </div>
-  </div>
-</header>
-
-<!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
-<nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Меню навигации">
-  <img src="assets/background/bg-blur.svg" class="mobile-menu__bg-blur" aria-hidden="true" alt=""/>
-  <div class="mobile-menu__top">
-    <a href="index.html" class="mobile-menu__logo-link" aria-label="ИТ Климат — на главную">
-      <img src="assets/logo/logo-svg.svg" class="mobile-menu__logo-img" alt="" aria-hidden="true"/>
-      <span class="mobile-menu__logo-text">ИТ Климат</span>
-    </a>
-    <button class="mobile-menu__close" aria-label="Закрыть меню">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-        <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-      </svg>
-    </button>
-  </div>
-  <div class="mobile-menu__nav">
-    <a href="index.html"    class="mobile-menu__link">Главная</a>
-    <a href="services.html" class="mobile-menu__link">Услуги</a>
-    <a href="tariffs.html"  class="mobile-menu__link">Тарифы</a>
-    <a href="about.html"    class="mobile-menu__link">О компании</a>
-    <a href="docs.html"     class="mobile-menu__link">Документация</a>
-    <a href="it-activity.html"             class="mobile-menu__link">Наша IT-деятельность</a>
-  </div>
-  <div class="mobile-menu__bottom">
-    <a href="tel:+79656095282" class="mobile-menu__phone">+7 (965) 609-52-82</a>
-    <a href="mailto:info@itclimat.ru" class="mobile-menu__email">info@itclimat.ru</a>
-    <div class="mobile-menu__policies">
-      <a href="pd.html"      class="mobile-menu__policy">Политика обработки ПД</a>
-      <a href="privacy.html" class="mobile-menu__policy">Политика конфиденциальности</a>
-      <a href="cookie.html"  class="mobile-menu__policy">Cookie</a>
+    <div class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__link">Главная</a>
+      <a href="services.html" class="mobile-menu__link">Услуги</a>
+      <a href="tariffs.html" class="mobile-menu__link">Тарифы</a>
+      <a href="about.html" class="mobile-menu__link">О компании</a>
+      <a href="docs.html" class="mobile-menu__link">Документация</a>
+      <a href="it-activity.html" class="mobile-menu__link">Наша IT-деятельность</a>
     </div>
-  </div>
-</nav>
-
-<!-- ═══════════════════ MAIN ═══════════════════ -->
-<main>
-
-  <!-- ── HERO ── -->
-  <section class="hero" aria-labelledby="hero-h1">
-    <img src="assets/background/bg-blur.svg" class="hero__bg-blur" aria-hidden="true" alt=""/>
-    <div class="container">
-      <div class="hero__inner">
-
-        <div class="hero__content">
-          <h1 class="hero__title" id="hero-h1">
-            ПЕРСОНАЛЬНЫЙ ПОСТАВЩИК
-            <span class="line-gradient">ИНТЕЛЛЕКТУАЛЬНЫХ</span>
-            РЕШЕНИЙ ДЛЯ КЛИМАТА
-          </h1>
-          <p class="hero__desc">
-            ИТ Климат&nbsp;— российская компания, специализирующаяся на разработке
-            инженерного программного обеспечения, программировании промышленных
-            контроллеров (ПЛК) и создании интеллектуальных решений для автоматизации
-            климатических и инженерных систем.
-          </p>
-          <div class="hero__actions">
-            <a href="about.html"    class="btn btn--primary">Подробнее</a>
-            <a href="services.html" class="btn btn--outline">Наши услуги</a>
-          </div>
-        </div>
-
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero__phones">
-            <img src="assets/background/phone-bg.png" class="hero__phones-img" alt="" aria-hidden="true"/>
-          </div>
-        </div>
-
+    <div class="mobile-menu__bottom">
+      <a href="tel:+79656095282" class="mobile-menu__phone">+7 (965) 609-52-82</a>
+      <a href="mailto:info@itclimat.ru" class="mobile-menu__email">info@itclimat.ru</a>
+      <div class="mobile-menu__policies">
+        <a href="pd.html" class="mobile-menu__policy">Политика обработки ПД</a>
+        <a href="cookie.html" class="mobile-menu__policy">Cookie</a>
       </div>
     </div>
-  </section>
+  </nav>
 
-  <!-- ── О НАС ── -->
-  <section class="section" aria-labelledby="about-h2">
-    <div class="container">
-      <h2 class="section__title reveal" id="about-h2">О нас</h2>
-      <div class="about-block reveal">
-        <div class="about-block__grid">
+  <!-- ═══════════════════ MAIN ═══════════════════ -->
+  <main>
 
-          <div>
-            <p class="about-block__col-title">Кто мы?</p>
-            <p class="about-block__text">
-              ООО «ИТ Климат»&nbsp;— российская компания, специализирующаяся на разработке
-              инженерного программного обеспечения и ПЛК для автоматизации и диспетчеризации
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-h1">
+      <img src="assets/background/bg-blur.svg" class="hero__bg-blur" aria-hidden="true" alt="" />
+      <div class="container">
+        <div class="hero__inner">
+
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-h1">
+              ПЕРСОНАЛЬНЫЙ ПОСТАВЩИК
+              <span class="line-gradient">ИНТЕЛЛЕКТУАЛЬНЫХ</span>
+              РЕШЕНИЙ ДЛЯ КЛИМАТА
+            </h1>
+            <p class="hero__desc">
+              ИТ Климат&nbsp;— российская компания, специализирующаяся на разработке
+              инженерного программного обеспечения, программировании промышленных
+              контроллеров (ПЛК) и создании интеллектуальных решений для автоматизации
               климатических и инженерных систем.
             </p>
-            <a href="about.html" class="about-block__cta">о компании →</a>
+            <div class="hero__actions">
+              <a href="about.html" class="btn btn--primary">Подробнее</a>
+              <a href="services.html" class="btn btn--outline">Наши услуги</a>
+            </div>
           </div>
 
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__phones">
+              <img src="assets/background/phone-bg.png" class="hero__phones-img" alt="" aria-hidden="true" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── О НАС ── -->
+    <section class="section" aria-labelledby="about-h2">
+      <div class="container">
+        <h2 class="section__title reveal" id="about-h2">О нас</h2>
+        <div class="about-block reveal">
+          <div class="about-block__grid">
+
+            <div>
+              <p class="about-block__col-title">Кто мы?</p>
+              <p class="about-block__text">
+                ООО «ИТ Климат»&nbsp;— российская компания, специализирующаяся на разработке
+                инженерного программного обеспечения и ПЛК для автоматизации и диспетчеризации
+                климатических и инженерных систем.
+              </p>
+              <a href="about.html" class="about-block__cta">о компании →</a>
+            </div>
+
+            <div>
+              <p class="about-block__col-title">Почему мы?</p>
+              <div class="about-block__tags">
+                <span class="about-block__tag--why">Клиенты по всей России</span>
+                <span class="about-block__tag--why">Прозрачность работы</span>
+                <span class="about-block__tag--why">Нестандартный подход</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="about-block__col-title">Наши клиенты:</p>
+              <div class="about-block__tags">
+                <span class="about-block__tag--client">ООО «ИТ Климат»</span>
+                <span class="about-block__tag--client">ПАО «Татэнерго» им. В.Д. Шашина</span>
+                <span class="about-block__tag--client">Инновационный центр «Сколково»</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ЧЕМ ЗАНИМАЕМСЯ ── -->
+    <section class="section" aria-labelledby="svc-h2">
+      <div class="container">
+        <h2 class="section__title reveal" id="svc-h2">Чем занимаемся?</h2>
+        <div class="services-wrap">
+          <div class="services-grid">
+
+            <article class="svc-card reveal" data-d="1">
+              <div class="svc-card__icon">
+                <img src="assets/icons/pc-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">разрабатываем Программное Обеспечение для ЭВМ и ПЛК для автоматизации инженерных
+                систем</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="2">
+              <div class="svc-card__icon">
+                <img src="assets/icons/settings-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">проводим тестирование и отладку оборудования и программного обеспечения перед
+                вводом в эксплуатацию</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="3">
+              <div class="svc-card__icon">
+                <img src="assets/icons/image-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">разрабатываем интерфейсы и дизайн дисплеев для визуализации технологических
+                процессов и аналитики</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="4">
+              <div class="svc-card__icon">
+                <img src="assets/icons/phone-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">создаём программное обеспечение для сенсорных операторских панелей и систем
+                управления</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="1">
+              <div class="svc-card__icon">
+                <img src="assets/icons/taimer-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">разрабатываем программные алгоритмы, логику работы ПЛК и интеграцию ресурсов
+                инженерных систем</p>
+            </article>
+
+            <article class="svc-card reveal" data-d="2">
+              <div class="svc-card__icon">
+                <img src="assets/icons/link-icons.png" alt="" aria-hidden="true" />
+              </div>
+              <p class="svc-card__text">создаём инженерное ПО и SCADA-решения для оперативного контроля и мониторинга
+                технологических процессов в реальном времени</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ТАРИФЫ (ПРЕВЬЮ) ── -->
+    <section class="section" aria-labelledby="tariffs-h2">
+      <div class="container">
+        <h2 class="section__title reveal" id="tariffs-h2">Тарифы</h2>
+
+        <div class="tariffs-intro reveal">
+          <p class="tariffs-intro__heading">Исключительные права на ПО</p>
+          <p class="tariffs-intro__text">
+            ООО «ИТ Климат» является обладателем исключительных прав на реализуемое программное обеспечение («КлиматПодбор», «КлиматПлюс», «КлиматУни», «КлиматКУБ»). Право использования программного обеспечения предоставляется на условиях лицензионного договора, который заключается с каждым лицензиатом.
+          </p>
+        </div>
+
+        <div class="tariffs-grid">
+
+          <div class="t-card reveal" data-d="1">
+            <div class="t-card__bm"><svg viewBox="0 0 28 40" fill="none">
+                <defs>
+                  <linearGradient id="bm1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#b100c0" />
+                    <stop offset="100%" stop-color="#8301ff" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 0H28V40L14 30L0 40Z" fill="url(#bm1)" />
+              </svg></div>
+            <h3 class="t-card__name">КлиматПодбор</h3>
+            <div class="t-card__features">
+              <div class="t-card__feature"><span class="t-card__dot"></span><span>программа для персональных
+                  компьютеров, которая по заданным параметрам подбирает оборудование для помещения</span></div>
+            </div>
+            <div class="t-card__prices">
+              <div class="t-card__price">Подписка на месяц от 100&nbsp;000&nbsp;₽</div>
+              <div class="t-card__price">Подписка на квартал от 250&nbsp;000&nbsp;₽</div>
+              <div class="t-card__price">Подписка на год от 1&nbsp;000&nbsp;000&nbsp;₽</div>
+            </div>
+          </div>
+
+          <div class="t-card reveal" data-d="2">
+            <div class="t-card__bm"><svg viewBox="0 0 28 40" fill="none">
+                <defs>
+                  <linearGradient id="bm2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#b100c0" />
+                    <stop offset="100%" stop-color="#8301ff" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 0H28V40L14 30L0 40Z" fill="url(#bm2)" />
+              </svg></div>
+            <h3 class="t-card__name">КлиматПлюс</h3>
+            <div class="t-card__features">
+              <div class="t-card__feature"><span class="t-card__dot"></span><span>WEB-интерфейс системы диспетчеризации,
+                  управления и визуализации климатическим оборудованием</span></div>
+              <div class="t-card__feature"><span class="t-card__dot"></span><span>доступ к приложениям Android и
+                  iOS</span></div>
+            </div>
+            <div class="t-card__prices">
+              <div class="t-card__price">Подписка на месяц от 5&nbsp;000&nbsp;₽</div>
+              <div class="t-card__price">Подписка на квартал от 13&nbsp;000&nbsp;₽</div>
+              <div class="t-card__price">Подписка на год от 55&nbsp;000&nbsp;₽</div>
+            </div>
+          </div>
+
+          <div class="t-card reveal" data-d="3">
+            <div class="t-card__bm"><svg viewBox="0 0 28 40" fill="none">
+                <defs>
+                  <linearGradient id="bm3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#b100c0" />
+                    <stop offset="100%" stop-color="#8301ff" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 0H28V40L14 30L0 40Z" fill="url(#bm3)" />
+              </svg></div>
+            <h3 class="t-card__name">КлиматУни</h3>
+            <div class="t-card__features">
+              <div class="t-card__feature"><span class="t-card__dot"></span><span>программа для ПЛК (программируемого
+                  логического контроллера) «КлиматУни»</span></div>
+            </div>
+            <div class="t-card__price-single">от 20 000 ₽</div>
+          </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:12px">
+          <a href="tariffs.html" class="btn btn--outline">Все тарифы и продукты →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="section" aria-label="Связаться с нами">
+      <div class="container">
+        <div class="cta-block reveal">
+          <p class="cta-block__title">Связаться с нами</p>
+          <a href="mailto:info@itclimat.ru" class="btn btn--ghost"
+            style="display:inline-flex;align-items:center;gap:14px">
+            Написать нам
+            <span
+              style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── КОНТАКТЫ ── -->
+    <section class="section" id="contacts" aria-labelledby="contacts-h2">
+      <div class="container">
+        <h2 class="section__title reveal" id="contacts-h2">Контакты</h2>
+        <div class="contact-card contact-card--wide reveal">
           <div>
-            <p class="about-block__col-title">Почему мы?</p>
-            <div class="about-block__tags">
-              <span class="about-block__tag--why">Клиенты по всей России</span>
-              <span class="about-block__tag--why">Прозрачность работы</span>
-              <span class="about-block__tag--why">Нестандартный подход</span>
-            </div>
+            <a href="tel:+79656095282" class="contact-card__phone">+7 (965) 609-52-82</a>
+            <a href="mailto:info@itclimat.ru" class="contact-card__email">info@itclimat.ru</a>
           </div>
-
           <div>
-            <p class="about-block__col-title">Наши клиенты:</p>
-            <div class="about-block__tags">
-              <span class="about-block__tag--client">ООО «ИТ Климат»</span>
-              <span class="about-block__tag--client">ПАО «Татэнерго» им. В.Д. Шашина</span>
-              <span class="about-block__tag--client">Инновационный центр «Сколково»</span>
-            </div>
+            <p class="contact-card__addr" style="font-size:15px;line-height:1.9">
+              <strong style="color:var(--c-text);font-weight:700;display:block;margin-bottom:8px">Юридический
+                адрес</strong>
+              420054, Республика Татарстан,<br>г. Казань, ул. Авангардная, д.89, оф. 38
+            </p>
+            <p class="contact-card__addr" style="margin-top:20px;font-size:13px;line-height:1.75">
+              ИНН/КПП: 1684008470 / 168401001<br>
+              ОГРН: 1221600086729<br>
+              ОКВЭД: 62.01
+            </p>
           </div>
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── ЧЕМ ЗАНИМАЕМСЯ ── -->
-  <section class="section" aria-labelledby="svc-h2">
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <h2 class="section__title reveal" id="svc-h2">Чем занимаемся?</h2>
-      <div class="services-wrap">
-        <div class="services-grid">
-
-          <article class="svc-card reveal" data-d="1">
-            <div class="svc-card__icon">
-              <img src="assets/icons/pc-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">разрабатываем Программное Обеспечение для ЭВМ и ПЛК для автоматизации инженерных систем</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="2">
-            <div class="svc-card__icon">
-              <img src="assets/icons/settings-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">проводим тестирование и отладку оборудования и программного обеспечения перед вводом в эксплуатацию</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="3">
-            <div class="svc-card__icon">
-              <img src="assets/icons/image-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">разрабатываем интерфейсы и дизайн дисплеев для визуализации технологических процессов и аналитики</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="4">
-            <div class="svc-card__icon">
-              <img src="assets/icons/phone-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">создаём программное обеспечение для сенсорных операторских панелей и систем управления</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="1">
-            <div class="svc-card__icon">
-              <img src="assets/icons/taimer-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">разрабатываем программные алгоритмы, логику работы ПЛК и интеграцию ресурсов инженерных систем</p>
-          </article>
-
-          <article class="svc-card reveal" data-d="2">
-            <div class="svc-card__icon">
-              <img src="assets/icons/link-icons.png" alt="" aria-hidden="true"/>
-            </div>
-            <p class="svc-card__text">создаём инженерное ПО и SCADA-решения для оперативного контроля и мониторинга технологических процессов в реальном времени</p>
-          </article>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ТАРИФЫ (ПРЕВЬЮ) ── -->
-  <section class="section" aria-labelledby="tariffs-h2">
-    <div class="container">
-      <h2 class="section__title reveal" id="tariffs-h2">Тарифы</h2>
-
-      <div class="tariffs-intro reveal">
-        <p class="tariffs-intro__heading">ООО «ИТ Климат» является правообладателем исключительных прав на программные продукты «КлиматПодбор» и «КлиматУни».</p>
-        <p class="tariffs-intro__text">
-          Программные продукты «КлиматПодбор» (реестровая запись №&nbsp;17832 от 29.05.2023) и «КлиматУни» (реестровая запись №&nbsp;19842 от 01.11.2023) включены в Единый реестр российских программ для ЭВМ и баз данных. Предоставление права использования осуществляется на основании лицензионного договора.
-        </p>
-      </div>
-
-      <div class="tariffs-grid">
-
-        <div class="t-card reveal" data-d="1">
-          <div class="t-card__bm"><svg viewBox="0 0 28 40" fill="none"><defs><linearGradient id="bm1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#b100c0"/><stop offset="100%" stop-color="#8301ff"/></linearGradient></defs><path d="M0 0H28V40L14 30L0 40Z" fill="url(#bm1)"/></svg></div>
-          <h3 class="t-card__name">КлиматПодбор</h3>
-          <div class="t-card__features">
-            <div class="t-card__feature"><span class="t-card__dot"></span><span>программа для персональных компьютеров, которая по заданным параметрам подбирает оборудование для помещения</span></div>
-          </div>
-          <div class="t-card__prices">
-            <div class="t-card__price">Подписка на месяц от 100&nbsp;000&nbsp;₽</div>
-            <div class="t-card__price">Подписка на квартал от 250&nbsp;000&nbsp;₽</div>
-            <div class="t-card__price">Подписка на год от 1&nbsp;000&nbsp;000&nbsp;₽</div>
-          </div>
-        </div>
-
-        <div class="t-card reveal" data-d="2">
-          <div class="t-card__bm"><svg viewBox="0 0 28 40" fill="none"><defs><linearGradient id="bm2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#b100c0"/><stop offset="100%" stop-color="#8301ff"/></linearGradient></defs><path d="M0 0H28V40L14 30L0 40Z" fill="url(#bm2)"/></svg></div>
-          <h3 class="t-card__name">КлиматПлюс</h3>
-          <div class="t-card__features">
-            <div class="t-card__feature"><span class="t-card__dot"></span><span>WEB-интерфейс системы диспетчеризации, управления и визуализации климатическим оборудованием</span></div>
-            <div class="t-card__feature"><span class="t-card__dot"></span><span>доступ к приложениям Android и iOS</span></div>
-          </div>
-          <div class="t-card__prices">
-            <div class="t-card__price">Подписка на месяц от 5&nbsp;000&nbsp;₽</div>
-            <div class="t-card__price">Подписка на квартал от 13&nbsp;000&nbsp;₽</div>
-            <div class="t-card__price">Подписка на год от 55&nbsp;000&nbsp;₽</div>
-          </div>
-        </div>
-
-        <div class="t-card reveal" data-d="3">
-          <div class="t-card__bm"><svg viewBox="0 0 28 40" fill="none"><defs><linearGradient id="bm3" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#b100c0"/><stop offset="100%" stop-color="#8301ff"/></linearGradient></defs><path d="M0 0H28V40L14 30L0 40Z" fill="url(#bm3)"/></svg></div>
-          <h3 class="t-card__name">КлиматУни</h3>
-          <div class="t-card__features">
-            <div class="t-card__feature"><span class="t-card__dot"></span><span>программа для ПЛК (программируемого логического контроллера) «КлиматУни»</span></div>
-          </div>
-          <div class="t-card__price-single">от 20 000 ₽</div>
-        </div>
-
-      </div>
-
-      <div style="text-align:center;margin-top:12px">
-        <a href="tariffs.html" class="btn btn--outline">Все тарифы и продукты →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA ── -->
-  <section class="section" aria-label="Связаться с нами">
-    <div class="container">
-      <div class="cta-block reveal">
-        <p class="cta-block__title">Связаться с нами</p>
-        <a href="mailto:info@itclimat.ru" class="btn btn--ghost" style="display:inline-flex;align-items:center;gap:14px">
-          Написать нам
-          <span style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── КОНТАКТЫ ── -->
-  <section class="section" id="contacts" aria-labelledby="contacts-h2">
-    <div class="container">
-      <h2 class="section__title reveal" id="contacts-h2">Контакты</h2>
-      <div class="contact-card contact-card--wide reveal">
+      <div class="footer__grid">
         <div>
-          <a href="tel:+79656095282" class="contact-card__phone">+7 (965) 609-52-82</a>
-          <a href="mailto:info@itclimat.ru" class="contact-card__email">info@itclimat.ru</a>
+          <div class="footer__brand">
+            <img src="assets/logo/logo-svg.svg" alt="" aria-hidden="true"
+              style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0" />
+            <span>ИТ Климат</span>
+          </div>
+          <div class="footer__info">
+            <p>Общество с ограниченной ответственностью «ИТ Климат»</p>
+            <p>Юридический адрес: 420054, Республика Татарстан, г. Казань, ул. Авангардная, д.89, оф. 38</p>
+            <p>ИНН/КПП: 1684008470 / 168401001</p>
+            <p>ОГРН: 1221600086729 от 26.10.2022 &nbsp;·&nbsp; ОКВЭД: 62.01</p>
+            <p>Код видов деятельности в области ИТ: 1.01, 2.01 (Приказ Минцифры РФ от 11 мая 2023 г. N 449)</p>
+            <p style="margin-top:10px">
+              <a href="tel:+79656095282">+7 (965) 609-52-82</a>&nbsp;&nbsp;
+              <a href="mailto:info@itclimat.ru">info@itclimat.ru</a>
+            </p>
+          </div>
         </div>
         <div>
-          <p class="contact-card__addr" style="font-size:15px;line-height:1.9">
-            <strong style="color:var(--c-text);font-weight:700;display:block;margin-bottom:8px">Юридический адрес</strong>
-            420054, Республика Татарстан,<br>г. Казань, ул. Авангардная, д.89, оф. 38
-          </p>
-          <p class="contact-card__addr" style="margin-top:20px;font-size:13px;line-height:1.75">
-            ИНН/КПП: 1684008470 / 168401001<br>
-            ОГРН: 1221600086729<br>
-            ОКВЭД: 62.01
-          </p>
+          <p class="footer__col-title">ИТ Климат</p>
+          <nav class="footer__links">
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="services.html" class="footer__link">Услуги</a>
+            <a href="tariffs.html" class="footer__link">Тарифы</a>
+            <a href="about.html" class="footer__link">Кто мы такие?</a>
+            <a href="about.html#contacts" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Продукты</p>
+          <nav class="footer__links">
+            <a href="tariffs.html" class="footer__link">КлиматПодбор</a>
+            <a href="tariffs.html" class="footer__link">КлиматПлюс</a>
+            <a href="tariffs.html" class="footer__link">КлиматКУБ</a>
+            <a href="tariffs.html" class="footer__link">КлиматУни</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Документация</p>
+          <nav class="footer__links">
+            <a href="pd.html" class="footer__link">Политика обработки ПД</a>
+            <a href="cookie.html" class="footer__link">Cookie</a>
+          </nav>
         </div>
       </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ═══════════════════ FOOTER ═══════════════════ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <div class="footer__brand">
-          <img src="assets/logo/logo-svg.svg" alt="" aria-hidden="true" style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0"/>
-          <span>ИТ Климат</span>
-        </div>
-        <div class="footer__info">
-          <p>Общество с ограниченной ответственностью «ИТ Климат»</p>
-          <p>Юридический адрес: 420054, Республика Татарстан, г. Казань, ул. Авангардная, д.89, оф. 38</p>
-          <p>ИНН/КПП: 1684008470 / 168401001</p>
-          <p>ОГРН: 1221600086729 от 26.10.2022 &nbsp;·&nbsp; ОКВЭД: 62.01</p>
-          <p>Код видов деятельности в области ИТ: 1.01, 2.01 (Приказ Минцифры РФ от 11 мая 2023 г. N 449)</p>
-          <p style="margin-top:10px">
-            <a href="tel:+79656095282">+7 (965) 609-52-82</a>&nbsp;&nbsp;
-            <a href="mailto:info@itclimat.ru">info@itclimat.ru</a>
-          </p>
-        </div>
-      </div>
-      <div>
-        <p class="footer__col-title">ИТ Климат</p>
-        <nav class="footer__links">
-          <a href="index.html"    class="footer__link">Главная</a>
-          <a href="services.html" class="footer__link">Услуги</a>
-          <a href="tariffs.html"  class="footer__link">Тарифы</a>
-          <a href="about.html"    class="footer__link">Кто мы такие?</a>
-          <a href="about.html#contacts" class="footer__link">Контакты</a>
-        </nav>
-      </div>
-      <div>
-        <p class="footer__col-title">Продукты</p>
-        <nav class="footer__links">
-          <a href="tariffs.html" class="footer__link">КлиматПодбор</a>
-          <a href="tariffs.html" class="footer__link">КлиматПлюс</a>
-          <a href="tariffs.html" class="footer__link">КлиматКУБ</a>
-          <a href="tariffs.html" class="footer__link">КлиматУни</a>
-        </nav>
-      </div>
-      <div>
-        <p class="footer__col-title">Документация</p>
-        <nav class="footer__links">
-          <a href="pd.html"      class="footer__link">Политика обработки ПД</a>
-          <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
-          <a href="cookie.html"  class="footer__link">Cookie</a>
-        </nav>
+      <div class="footer__bottom">
+        <span>© 2024 ООО «ИТ Климат». Все права защищены.</span>
+        <span>ИНН 1684008470</span>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>© 2024 ООО «ИТ Климат». Все права защищены.</span>
-      <span>ИНН 1684008470</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
-<script type="module" src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    crossorigin="anonymous"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

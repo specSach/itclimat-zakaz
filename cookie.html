@@ -1,310 +1,364 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Политика использования файлов Cookie — ИТ Климат</title>
-  <meta name="description" content="Политика использования файлов Cookie на сайте ООО «ИТ Климат» — itclimat.ru. Типы cookie, управление и удаление."/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <meta name="description"
+    content="Политика использования файлов Cookie на сайте ООО «ИТ Климат» — itclimat.ru. Типы cookie, управление и удаление." />
+  <link rel="stylesheet" href="css/main.css" />
   <script src="js/init.js"></script>
 </head>
+
 <body>
-<script src="js/modules/preloader.js"></script>
+  <script src="js/modules/preloader.js"></script>
 
-<!-- ═══════════════════ HEADER ═══════════════════ -->
-<header class="header" role="banner">
-  <div class="container">
-    <div class="header__inner">
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
 
-      <a href="index.html" class="header__logo" aria-label="ИТ Климат — на главную">
-        <img src="assets/logo/logo-svg.svg" class="header__logo-img" alt="" aria-hidden="true"/>
-        <span class="header__logo-text">ИТ Климат</span>
+        <a href="index.html" class="header__logo" aria-label="ИТ Климат — на главную">
+          <img src="assets/logo/logo-svg.svg" class="header__logo-img" alt="" aria-hidden="true" />
+        </a>
+
+        <nav class="header__nav" role="navigation" aria-label="Основное меню">
+          <a href="index.html" class="header__nav-link">Главная</a>
+          <a href="services.html" class="header__nav-link">Услуги</a>
+          <a href="tariffs.html" class="header__nav-link">Тарифы</a>
+          <a href="about.html" class="header__nav-link">О компании</a>
+          <a href="docs.html" class="header__nav-link header__nav-link--active">Документация</a>
+          <a href="it-activity.html" class="header__nav-link">Наша IT-деятельность</a>
+        </nav>
+
+        <a href="tel:+79656095282" class="header__phone">+7 (965) 609-52-82</a>
+
+        <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
+  <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Меню навигации">
+    <img src="assets/background/bg-blur.svg" class="mobile-menu__bg-blur" aria-hidden="true" alt="" />
+    <div class="mobile-menu__top">
+      <a href="index.html" class="mobile-menu__logo-link" aria-label="ИТ Климат — на главную">
+        <img src="assets/logo/logo-svg.svg" class="mobile-menu__logo-img" alt="" aria-hidden="true" />
+        <span class="mobile-menu__logo-text">ИТ Климат</span>
       </a>
-
-      <nav class="header__nav" role="navigation" aria-label="Основное меню">
-        <a href="index.html"       class="header__nav-link">Главная</a>
-        <a href="services.html"    class="header__nav-link">Услуги</a>
-        <a href="tariffs.html"     class="header__nav-link">Тарифы</a>
-        <a href="about.html"       class="header__nav-link">О компании</a>
-        <a href="docs.html"        class="header__nav-link header__nav-link--active">Документация</a>
-        <a href="it-activity.html" class="header__nav-link">Наша IT-деятельность</a>
-      </nav>
-
-      <a href="tel:+79656095282" class="header__phone">+7 (965) 609-52-82</a>
-
-      <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
+      <button class="mobile-menu__close" aria-label="Закрыть меню">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
       </button>
     </div>
-  </div>
-</header>
-
-<!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
-<nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Меню навигации">
-  <img src="assets/background/bg-blur.svg" class="mobile-menu__bg-blur" aria-hidden="true" alt=""/>
-  <div class="mobile-menu__top">
-    <a href="index.html" class="mobile-menu__logo-link" aria-label="ИТ Климат — на главную">
-      <img src="assets/logo/logo-svg.svg" class="mobile-menu__logo-img" alt="" aria-hidden="true"/>
-      <span class="mobile-menu__logo-text">ИТ Климат</span>
-    </a>
-    <button class="mobile-menu__close" aria-label="Закрыть меню">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-        <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-      </svg>
-    </button>
-  </div>
-  <div class="mobile-menu__nav">
-    <a href="index.html"       class="mobile-menu__link">Главная</a>
-    <a href="services.html"    class="mobile-menu__link">Услуги</a>
-    <a href="tariffs.html"     class="mobile-menu__link">Тарифы</a>
-    <a href="about.html"       class="mobile-menu__link">О компании</a>
-    <a href="docs.html"        class="mobile-menu__link mobile-menu__link--active">Документация</a>
-    <a href="it-activity.html" class="mobile-menu__link">Наша IT-деятельность</a>
-  </div>
-  <div class="mobile-menu__bottom">
-    <a href="tel:+79656095282" class="mobile-menu__phone">+7 (965) 609-52-82</a>
-    <a href="mailto:info@itclimat.ru" class="mobile-menu__email">info@itclimat.ru</a>
-    <div class="mobile-menu__policies">
-      <a href="pd.html"      class="mobile-menu__policy">Политика обработки ПД</a>
-      <a href="privacy.html" class="mobile-menu__policy">Политика конфиденциальности</a>
-      <a href="cookie.html"  class="mobile-menu__policy">Cookie</a>
+    <div class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__link">Главная</a>
+      <a href="services.html" class="mobile-menu__link">Услуги</a>
+      <a href="tariffs.html" class="mobile-menu__link">Тарифы</a>
+      <a href="about.html" class="mobile-menu__link">О компании</a>
+      <a href="docs.html" class="mobile-menu__link mobile-menu__link--active">Документация</a>
+      <a href="it-activity.html" class="mobile-menu__link">Наша IT-деятельность</a>
     </div>
-  </div>
-</nav>
-
-<!-- ═══════════════════ MAIN ═══════════════════ -->
-<main>
-
-  <!-- ── BREADCRUMBS ── -->
-  <nav class="breadcrumbs" aria-label="Навигационные цепочки">
-    <div class="container">
-      <ol class="breadcrumbs__list">
-        <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="docs.html" class="breadcrumbs__link">Документация</a></li>
-        <li class="breadcrumbs__item"><span class="breadcrumbs__current">Политика Cookie</span></li>
-      </ol>
+    <div class="mobile-menu__bottom">
+      <a href="tel:+79656095282" class="mobile-menu__phone">+7 (965) 609-52-82</a>
+      <a href="mailto:info@itclimat.ru" class="mobile-menu__email">info@itclimat.ru</a>
+      <div class="mobile-menu__policies">
+        <a href="pd.html" class="mobile-menu__policy">Политика обработки ПД</a>
+        <a href="cookie.html" class="mobile-menu__policy">Cookie</a>
+      </div>
     </div>
   </nav>
 
-  <!-- ── PAGE HERO ── -->
-  <section class="page-hero" aria-labelledby="ph-title">
-    <div class="page-hero__blob" aria-hidden="true"></div>
-    <div class="page-hero__blob-2" aria-hidden="true"></div>
+  <!-- ═══════════════════ MAIN ═══════════════════ -->
+  <main>
+
+    <!-- ── BREADCRUMBS ── -->
+    <nav class="breadcrumbs" aria-label="Навигационные цепочки">
+      <div class="container">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="docs.html" class="breadcrumbs__link">Документация</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Политика Cookie</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero" aria-labelledby="ph-title">
+      <div class="page-hero__blob" aria-hidden="true"></div>
+      <div class="page-hero__blob-2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <div>
+            <h1 class="page-hero__title" id="ph-title">Политика использования файлов (Cookie)</h1>
+            <p style="color:rgba(255,255,255,.8);margin-top:14px;font-size:16px;max-width:560px;line-height:1.7">
+              Информация о том, как мы используем файлы cookie на сайте itclimat.ru, какие их типы применяются и как ими
+              управлять.
+            </p>
+          </div>
+          <div class="page-hero__deco" aria-hidden="true">
+            <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+              <circle cx="80" cy="80" r="72" stroke="white" stroke-width="1.5" stroke-dasharray="5 5" opacity=".35" />
+              <circle cx="80" cy="80" r="36" stroke="white" stroke-width="1.5" fill="none" opacity=".3" />
+              <circle cx="60" cy="60" r="8" fill="white" opacity=".25" />
+              <circle cx="100" cy="68" r="5" fill="white" opacity=".2" />
+              <circle cx="72" cy="100" r="6" fill="white" opacity=".2" />
+              <circle cx="104" cy="96" r="4" fill="white" opacity=".15" />
+              <circle cx="80" cy="80" r="3" fill="white" opacity=".4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ДОКУМЕНТ ── -->
+    <section class="section" aria-label="Политика использования Cookie">
+      <div class="container">
+        <div class="policy-layout">
+
+          <!-- Содержание -->
+          <aside class="policy-toc">
+            <p class="policy-toc__label">Содержание</p>
+            <nav class="policy-toc__list" aria-label="Разделы документа">
+              <a href="#ck-intro" class="policy-toc__item">Введение</a>
+              <a href="#ck-s1" class="policy-toc__item">Что такое cookies?</a>
+              <a href="#ck-s2" class="policy-toc__item">Типы cookie-файлов</a>
+              <a href="#ck-s3" class="policy-toc__item">Сроки хранения</a>
+              <a href="#ck-s4" class="policy-toc__item">Управление cookies</a>
+              <a href="#ck-s5" class="policy-toc__item">Другие технологии</a>
+              <a href="#ck-s6" class="policy-toc__item">Защита данных</a>
+            </nav>
+          </aside>
+
+          <!-- Документ -->
+          <div class="policy-doc">
+
+            <div class="policy-doc__meta">
+              <div class="policy-doc__meta-item">
+                <strong>Оператор</strong>
+                ООО «ИТ Климат»
+              </div>
+              <div class="policy-doc__meta-item">
+                <strong>Сайт</strong>
+                itclimat.ru
+              </div>
+            </div>
+
+            <!-- Введение -->
+            <div class="policy-section" id="ck-intro">
+              <div class="policy-section__hd">
+                <span class="policy-section__num" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="white" stroke-width="1.5" />
+                    <path d="M8 5v4M8 11v.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <h2 class="policy-section__title">Введение</h2>
+              </div>
+              <div class="policy-body">
+                <p>Мы используем файлы «cookies» и похожие технологии на нашем сайте, чтобы отличить Вас от других
+                  пользователей нашего ресурса, улучшить работу и повысить эффективность сайта.</p>
+                <p>Если вы не согласны с тем, чтобы мы использовали данный тип файлов и похожие технологии, то вы должны
+                  соответствующим образом установить настройки вашего браузера или не использовать наш сайт.</p>
+                <p>Настоящее уведомление предоставляет вам информацию о том, как мы используем cookies и как вы можете
+                  ими управлять. В частности, вы принимаете правила использования аналитических, рекламных и
+                  функциональных cookies для целей, указанных ниже.</p>
+              </div>
+            </div>
+
+            <!-- Что такое cookies -->
+            <div class="policy-section" id="ck-s1">
+              <div class="policy-section__hd">
+                <span class="policy-section__num">1</span>
+                <h2 class="policy-section__title">Что такое файлы cookie?</h2>
+              </div>
+              <div class="policy-body">
+                <p>Cookies — это небольшие файлы, состоящие из букв и цифр, которые сохраняются Вашим браузером на Вашем
+                  устройстве (компьютер, телефон, планшет и т.п.), если Вы соглашаетесь на их использование.</p>
+                <p>Используя этот сайт, вы выражаете своё согласие на использование файлов cookie в соответствии с
+                  условиями, описанными на данной странице.</p>
+                <p>Мы используем следующие файлы cookies:</p>
+              </div>
+            </div>
+
+            <!-- Типы cookie -->
+            <div class="policy-section" id="ck-s2">
+              <div class="policy-section__hd">
+                <span class="policy-section__num">2</span>
+                <h2 class="policy-section__title">Типы используемых файлов cookie</h2>
+              </div>
+              <div class="policy-body">
+                <p><strong>Крайне необходимые cookie-файлы.</strong> Это файлы, необходимые для корректной работы нашего
+                  Сайта. К ним относятся, например, файлы, позволяющие вам входить в защищённые разделы нашего сайта.
+                  Без этих файлов отдельные функции сайта работать не смогут.</p>
+                <p><strong>Аналитические/технические cookie-файлы.</strong> Они позволяют нам оценить и подсчитать число
+                  посетителей, а также понять, как они перемещаются по Сайту при работе с ним. Это помогает нам вносить
+                  улучшения в работу сайта, например, оптимизируя поиск нужных разделов, делая его простым и
+                  эффективным.</p>
+                <p><strong>Функциональные cookie-файлы.</strong> Данные файлы нужны для того, чтобы распознать Вас,
+                  когда Вы снова заходите на веб-сайт. Это позволяет нам персонализировать содержание Сайта под Ваши
+                  нужды, запоминать Ваши предпочтения (например, выбор языка или региона).</p>
+                <p><strong>Целевые cookie-файлы.</strong> Эти cookie-файлы регистрируют Ваши посещения Сайта, запоминают
+                  страницы, которые Вы посетили и ссылки, по которым Вы проходили. Мы используем эту информацию для
+                  того, чтобы наш Сайт и отображаемая на нём реклама как можно более точно соответствовали Вашим
+                  интересам.</p>
+                <p>Пожалуйста, обратите внимание на то, что третьи лица (например, рекламные сети или провайдеры внешних
+                  услуг, таких как анализ веб-трафика) также могут использовать cookie-файлы. Этот процесс мы не
+                  контролируем. Эти cookie-файлы скорее всего являются аналитическими/техническими cookie-файлами или
+                  целевыми cookie-файлами.</p>
+              </div>
+            </div>
+
+            <!-- Сроки хранения -->
+            <div class="policy-section" id="ck-s3">
+              <div class="policy-section__hd">
+                <span class="policy-section__num">3</span>
+                <h2 class="policy-section__title">Как долго файлы cookie хранятся на устройстве?</h2>
+              </div>
+              <div class="policy-body">
+                <p>Вы можете заблокировать cookie-файлы, активировав определённую настройку в Вашем браузере, что
+                  позволит Вам отказаться от принятия всех или части cookie-файлов. Однако в случае блокировки
+                  cookie-файлов в интернет-браузере (включая крайне необходимые cookie-файлы), Вы можете потерять доступ
+                  ко всем или к некоторым разделам нашего Сайта.</p>
+                <p><strong>Сессионные cookie</strong> — хранятся с момента вашего входа на Сайт до конца данной
+                  конкретной сессии работы в браузере. При закрытии браузера эти файлы становятся ненужными и
+                  автоматически удаляются. Такие файлы cookie называются «сеансовыми».</p>
+                <p><strong>Постоянные cookie</strong> — сохраняются на устройстве и в промежутке между сессиями работы в
+                  браузере — они не удаляются после закрытия браузера. Такие файлы cookie называются «постоянными». Срок
+                  хранения постоянных файлов cookie на устройстве различается для разных файлов cookie.</p>
+              </div>
+            </div>
+
+            <!-- Управление cookies -->
+            <div class="policy-section" id="ck-s4">
+              <div class="policy-section__hd">
+                <span class="policy-section__num">4</span>
+                <h2 class="policy-section__title">Как контролировать или удалять файлы cookies?</h2>
+              </div>
+              <div class="policy-body">
+                <p>Большинство интернет-браузеров изначально настроены автоматически принимать cookie. Вы можете
+                  изменить настройки таким образом, чтобы блокировать cookie или предупреждать пользователя, когда файлы
+                  данного типа будут отправлены на устройство. Есть несколько способов управления cookie-файлами.
+                  Пожалуйста, обратитесь к инструкции браузера для того, чтобы узнать больше о том, как скорректировать
+                  или изменить настройки браузера.</p>
+                <p>Если вы отключите cookie, которые мы используем, это может повлиять на вашу работу с нашим Сайтом.
+                  Например, вы можете быть не в состоянии посетить определённые разделы Сайта или не получать
+                  персонализированную информацию при посещении нашего Сайта. Если вы используете различные устройства
+                  для просмотра и доступа к Сайту (например, компьютер, смартфон, планшет и т.д.), вы должны убедиться,
+                  что каждый браузер на каждом устройстве настроен в соответствии с вашей точкой зрения на работу с
+                  файлами cookie.</p>
+              </div>
+            </div>
+
+            <!-- Другие технологии -->
+            <div class="policy-section" id="ck-s5">
+              <div class="policy-section__hd">
+                <span class="policy-section__num">5</span>
+                <h2 class="policy-section__title">Другие подобные технологии</h2>
+              </div>
+              <div class="policy-body">
+                <p>Как и многие веб-сайты, мы используем технологии, схожие с cookies. Это даёт нам информацию о том,
+                  как наш Сайт и его содержание используются нашими посетителями, и позволяет нам установить, посещали
+                  ли наш Сайт или другие сайты с вашего компьютера или девайса.</p>
+                <p>Наши серверы автоматически считывают ваш IP-адрес, когда вы посещаете наш Сайт, и мы можем связать
+                  эту информацию с вашим доменным именем или с именем вашего интернет-провайдера. Мы также можем
+                  собирать некоторые «сведения о посещениях», относящиеся к вашему компьютеру или устройству,
+                  веб-браузеру или операционной системе и их установках, странице, которая привела вас на наш Сайт,
+                  страницы и содержание, которые вы видите и на которые вы кликаете во время вашего визита, а также
+                  когда и на протяжении какого времени вы это делаете, что вы загружаете, какие сайты вы посещаете после
+                  того, как покидаете наш Сайт, а также ключевые слова, которые вы вводили на нашем Сайте или на сайтах,
+                  с которых пришли на наш Сайт.</p>
+              </div>
+            </div>
+
+            <!-- Защита данных -->
+            <div class="policy-section" id="ck-s6">
+              <div class="policy-section__hd">
+                <span class="policy-section__num">6</span>
+                <h2 class="policy-section__title">Защита персональных данных</h2>
+              </div>
+              <div class="policy-body">
+                <p>Если в использование файлов cookies и похожих технологий будут внесены изменения, мы разместим
+                  информацию в данных правилах.</p>
+                <p>Пожалуйста, проверяйте периодически, как продолжают развиваться методы сбора данных онлайн и наше
+                  использование этих данных.</p>
+                <p>По вопросам, связанным с обработкой данных посредством cookie, обращайтесь: <a
+                    href="mailto:info@itclimat.ru">info@itclimat.ru</a></p>
+              </div>
+            </div>
+
+          </div><!-- /policy-doc -->
+        </div><!-- /policy-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="page-hero__inner">
+      <div class="footer__grid">
         <div>
-          <h1 class="page-hero__title" id="ph-title">Политика использования файлов (Cookie)</h1>
-          <p style="color:rgba(255,255,255,.8);margin-top:14px;font-size:16px;max-width:560px;line-height:1.7">
-            Информация о том, как мы используем файлы cookie на сайте itclimat.ru, какие их типы применяются и как ими управлять.
-          </p>
+          <div class="footer__brand">
+            <img src="assets/logo/logo-svg.svg" alt="" aria-hidden="true"
+              style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0" />
+            <span>ИТ Климат</span>
+          </div>
+          <div class="footer__info">
+            <p>Общество с ограниченной ответственностью «ИТ Климат»</p>
+            <p>Юридический адрес: 420054, Республика Татарстан, г. Казань, ул. Авангардная, д.89, оф. 38</p>
+            <p>ИНН/КПП: 1684008470 / 168401001</p>
+            <p>ОГРН: 1221600086729 от 26.10.2022 &nbsp;·&nbsp; ОКВЭД: 62.01</p>
+            <p style="margin-top:10px">
+              <a href="tel:+79656095282">+7 (965) 609-52-82</a>&nbsp;&nbsp;
+              <a href="mailto:info@itclimat.ru">info@itclimat.ru</a>
+            </p>
+          </div>
         </div>
-        <div class="page-hero__deco" aria-hidden="true">
-          <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
-            <circle cx="80" cy="80" r="72" stroke="white" stroke-width="1.5" stroke-dasharray="5 5" opacity=".35"/>
-            <circle cx="80" cy="80" r="36" stroke="white" stroke-width="1.5" fill="none" opacity=".3"/>
-            <circle cx="60" cy="60" r="8" fill="white" opacity=".25"/>
-            <circle cx="100" cy="68" r="5" fill="white" opacity=".2"/>
-            <circle cx="72" cy="100" r="6" fill="white" opacity=".2"/>
-            <circle cx="104" cy="96" r="4" fill="white" opacity=".15"/>
-            <circle cx="80" cy="80" r="3" fill="white" opacity=".4"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ДОКУМЕНТ ── -->
-  <section class="section" aria-label="Политика использования Cookie">
-    <div class="container">
-      <div class="policy-layout">
-
-        <!-- Содержание -->
-        <aside class="policy-toc">
-          <p class="policy-toc__label">Содержание</p>
-          <nav class="policy-toc__list" aria-label="Разделы документа">
-            <a href="#ck-intro" class="policy-toc__item">Введение</a>
-            <a href="#ck-s1"    class="policy-toc__item">Что такое cookies?</a>
-            <a href="#ck-s2"    class="policy-toc__item">Типы cookie-файлов</a>
-            <a href="#ck-s3"    class="policy-toc__item">Сроки хранения</a>
-            <a href="#ck-s4"    class="policy-toc__item">Управление cookies</a>
-            <a href="#ck-s5"    class="policy-toc__item">Другие технологии</a>
-            <a href="#ck-s6"    class="policy-toc__item">Защита данных</a>
+        <div>
+          <p class="footer__col-title">ИТ Климат</p>
+          <nav class="footer__links">
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="services.html" class="footer__link">Услуги</a>
+            <a href="tariffs.html" class="footer__link">Тарифы</a>
+            <a href="about.html" class="footer__link">Кто мы такие?</a>
+            <a href="about.html#contacts" class="footer__link">Контакты</a>
           </nav>
-        </aside>
-
-        <!-- Документ -->
-        <div class="policy-doc">
-
-          <div class="policy-doc__meta">
-            <div class="policy-doc__meta-item">
-              <strong>Оператор</strong>
-              ООО «ИТ Климат»
-            </div>
-            <div class="policy-doc__meta-item">
-              <strong>Сайт</strong>
-              itclimat.ru
-            </div>
-          </div>
-
-          <!-- Введение -->
-          <div class="policy-section" id="ck-intro">
-            <div class="policy-section__hd">
-              <span class="policy-section__num" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="white" stroke-width="1.5"/><path d="M8 5v4M8 11v.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-              </span>
-              <h2 class="policy-section__title">Введение</h2>
-            </div>
-            <div class="policy-body">
-              <p>Мы используем файлы «cookies» и похожие технологии на нашем сайте, чтобы отличить Вас от других пользователей нашего ресурса, улучшить работу и повысить эффективность сайта.</p>
-              <p>Если вы не согласны с тем, чтобы мы использовали данный тип файлов и похожие технологии, то вы должны соответствующим образом установить настройки вашего браузера или не использовать наш сайт.</p>
-              <p>Настоящее уведомление предоставляет вам информацию о том, как мы используем cookies и как вы можете ими управлять. В частности, вы принимаете правила использования аналитических, рекламных и функциональных cookies для целей, указанных ниже.</p>
-            </div>
-          </div>
-
-          <!-- Что такое cookies -->
-          <div class="policy-section" id="ck-s1">
-            <div class="policy-section__hd">
-              <span class="policy-section__num">1</span>
-              <h2 class="policy-section__title">Что такое файлы cookie?</h2>
-            </div>
-            <div class="policy-body">
-              <p>Cookies — это небольшие файлы, состоящие из букв и цифр, которые сохраняются Вашим браузером на Вашем устройстве (компьютер, телефон, планшет и т.п.), если Вы соглашаетесь на их использование.</p>
-              <p>Используя этот сайт, вы выражаете своё согласие на использование файлов cookie в соответствии с условиями, описанными на данной странице.</p>
-              <p>Мы используем следующие файлы cookies:</p>
-            </div>
-          </div>
-
-          <!-- Типы cookie -->
-          <div class="policy-section" id="ck-s2">
-            <div class="policy-section__hd">
-              <span class="policy-section__num">2</span>
-              <h2 class="policy-section__title">Типы используемых файлов cookie</h2>
-            </div>
-            <div class="policy-body">
-              <p><strong>Крайне необходимые cookie-файлы.</strong> Это файлы, необходимые для корректной работы нашего Сайта. К ним относятся, например, файлы, позволяющие вам входить в защищённые разделы нашего сайта. Без этих файлов отдельные функции сайта работать не смогут.</p>
-              <p><strong>Аналитические/технические cookie-файлы.</strong> Они позволяют нам оценить и подсчитать число посетителей, а также понять, как они перемещаются по Сайту при работе с ним. Это помогает нам вносить улучшения в работу сайта, например, оптимизируя поиск нужных разделов, делая его простым и эффективным.</p>
-              <p><strong>Функциональные cookie-файлы.</strong> Данные файлы нужны для того, чтобы распознать Вас, когда Вы снова заходите на веб-сайт. Это позволяет нам персонализировать содержание Сайта под Ваши нужды, запоминать Ваши предпочтения (например, выбор языка или региона).</p>
-              <p><strong>Целевые cookie-файлы.</strong> Эти cookie-файлы регистрируют Ваши посещения Сайта, запоминают страницы, которые Вы посетили и ссылки, по которым Вы проходили. Мы используем эту информацию для того, чтобы наш Сайт и отображаемая на нём реклама как можно более точно соответствовали Вашим интересам.</p>
-              <p>Пожалуйста, обратите внимание на то, что третьи лица (например, рекламные сети или провайдеры внешних услуг, таких как анализ веб-трафика) также могут использовать cookie-файлы. Этот процесс мы не контролируем. Эти cookie-файлы скорее всего являются аналитическими/техническими cookie-файлами или целевыми cookie-файлами.</p>
-            </div>
-          </div>
-
-          <!-- Сроки хранения -->
-          <div class="policy-section" id="ck-s3">
-            <div class="policy-section__hd">
-              <span class="policy-section__num">3</span>
-              <h2 class="policy-section__title">Как долго файлы cookie хранятся на устройстве?</h2>
-            </div>
-            <div class="policy-body">
-              <p>Вы можете заблокировать cookie-файлы, активировав определённую настройку в Вашем браузере, что позволит Вам отказаться от принятия всех или части cookie-файлов. Однако в случае блокировки cookie-файлов в интернет-браузере (включая крайне необходимые cookie-файлы), Вы можете потерять доступ ко всем или к некоторым разделам нашего Сайта.</p>
-              <p><strong>Сессионные cookie</strong> — хранятся с момента вашего входа на Сайт до конца данной конкретной сессии работы в браузере. При закрытии браузера эти файлы становятся ненужными и автоматически удаляются. Такие файлы cookie называются «сеансовыми».</p>
-              <p><strong>Постоянные cookie</strong> — сохраняются на устройстве и в промежутке между сессиями работы в браузере — они не удаляются после закрытия браузера. Такие файлы cookie называются «постоянными». Срок хранения постоянных файлов cookie на устройстве различается для разных файлов cookie.</p>
-            </div>
-          </div>
-
-          <!-- Управление cookies -->
-          <div class="policy-section" id="ck-s4">
-            <div class="policy-section__hd">
-              <span class="policy-section__num">4</span>
-              <h2 class="policy-section__title">Как контролировать или удалять файлы cookies?</h2>
-            </div>
-            <div class="policy-body">
-              <p>Большинство интернет-браузеров изначально настроены автоматически принимать cookie. Вы можете изменить настройки таким образом, чтобы блокировать cookie или предупреждать пользователя, когда файлы данного типа будут отправлены на устройство. Есть несколько способов управления cookie-файлами. Пожалуйста, обратитесь к инструкции браузера для того, чтобы узнать больше о том, как скорректировать или изменить настройки браузера.</p>
-              <p>Если вы отключите cookie, которые мы используем, это может повлиять на вашу работу с нашим Сайтом. Например, вы можете быть не в состоянии посетить определённые разделы Сайта или не получать персонализированную информацию при посещении нашего Сайта. Если вы используете различные устройства для просмотра и доступа к Сайту (например, компьютер, смартфон, планшет и т.д.), вы должны убедиться, что каждый браузер на каждом устройстве настроен в соответствии с вашей точкой зрения на работу с файлами cookie.</p>
-            </div>
-          </div>
-
-          <!-- Другие технологии -->
-          <div class="policy-section" id="ck-s5">
-            <div class="policy-section__hd">
-              <span class="policy-section__num">5</span>
-              <h2 class="policy-section__title">Другие подобные технологии</h2>
-            </div>
-            <div class="policy-body">
-              <p>Как и многие веб-сайты, мы используем технологии, схожие с cookies. Это даёт нам информацию о том, как наш Сайт и его содержание используются нашими посетителями, и позволяет нам установить, посещали ли наш Сайт или другие сайты с вашего компьютера или девайса.</p>
-              <p>Наши серверы автоматически считывают ваш IP-адрес, когда вы посещаете наш Сайт, и мы можем связать эту информацию с вашим доменным именем или с именем вашего интернет-провайдера. Мы также можем собирать некоторые «сведения о посещениях», относящиеся к вашему компьютеру или устройству, веб-браузеру или операционной системе и их установках, странице, которая привела вас на наш Сайт, страницы и содержание, которые вы видите и на которые вы кликаете во время вашего визита, а также когда и на протяжении какого времени вы это делаете, что вы загружаете, какие сайты вы посещаете после того, как покидаете наш Сайт, а также ключевые слова, которые вы вводили на нашем Сайте или на сайтах, с которых пришли на наш Сайт.</p>
-            </div>
-          </div>
-
-          <!-- Защита данных -->
-          <div class="policy-section" id="ck-s6">
-            <div class="policy-section__hd">
-              <span class="policy-section__num">6</span>
-              <h2 class="policy-section__title">Защита персональных данных</h2>
-            </div>
-            <div class="policy-body">
-              <p>Если в использование файлов cookies и похожих технологий будут внесены изменения, мы разместим информацию в данных правилах.</p>
-              <p>Пожалуйста, проверяйте периодически, как продолжают развиваться методы сбора данных онлайн и наше использование этих данных.</p>
-              <p>По вопросам, связанным с обработкой данных посредством cookie, обращайтесь: <a href="mailto:info@itclimat.ru">info@itclimat.ru</a></p>
-            </div>
-          </div>
-
-        </div><!-- /policy-doc -->
-      </div><!-- /policy-layout -->
-    </div>
-  </section>
-
-</main>
-
-<!-- ═══════════════════ FOOTER ═══════════════════ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <div class="footer__brand">
-          <img src="assets/logo/logo-svg.svg" alt="" aria-hidden="true" style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0"/>
-          <span>ИТ Климат</span>
         </div>
-        <div class="footer__info">
-          <p>Общество с ограниченной ответственностью «ИТ Климат»</p>
-          <p>Юридический адрес: 420054, Республика Татарстан, г. Казань, ул. Авангардная, д.89, оф. 38</p>
-          <p>ИНН/КПП: 1684008470 / 168401001</p>
-          <p>ОГРН: 1221600086729 от 26.10.2022 &nbsp;·&nbsp; ОКВЭД: 62.01</p>
-          <p style="margin-top:10px">
-            <a href="tel:+79656095282">+7 (965) 609-52-82</a>&nbsp;&nbsp;
-            <a href="mailto:info@itclimat.ru">info@itclimat.ru</a>
-          </p>
+        <div>
+          <p class="footer__col-title">Продукты</p>
+          <nav class="footer__links">
+            <a href="tariffs.html" class="footer__link">КлиматПодбор</a>
+            <a href="tariffs.html" class="footer__link">КлиматПлюс</a>
+            <a href="tariffs.html" class="footer__link">КлиматКУБ</a>
+            <a href="tariffs.html" class="footer__link">КлиматУни</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Документация</p>
+          <nav class="footer__links">
+            <a href="pd.html" class="footer__link">Политика обработки ПД</a>
+            <a href="cookie.html" class="footer__link">Cookie</a>
+          </nav>
         </div>
       </div>
-      <div>
-        <p class="footer__col-title">ИТ Климат</p>
-        <nav class="footer__links">
-          <a href="index.html"          class="footer__link">Главная</a>
-          <a href="services.html"       class="footer__link">Услуги</a>
-          <a href="tariffs.html"        class="footer__link">Тарифы</a>
-          <a href="about.html"          class="footer__link">Кто мы такие?</a>
-          <a href="about.html#contacts" class="footer__link">Контакты</a>
-        </nav>
-      </div>
-      <div>
-        <p class="footer__col-title">Продукты</p>
-        <nav class="footer__links">
-          <a href="tariffs.html" class="footer__link">КлиматПодбор</a>
-          <a href="tariffs.html" class="footer__link">КлиматПлюс</a>
-          <a href="tariffs.html" class="footer__link">КлиматКУБ</a>
-          <a href="tariffs.html" class="footer__link">КлиматУни</a>
-        </nav>
-      </div>
-      <div>
-        <p class="footer__col-title">Документация</p>
-        <nav class="footer__links">
-          <a href="pd.html"      class="footer__link">Политика обработки ПД</a>
-          <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
-          <a href="cookie.html"  class="footer__link">Cookie</a>
-        </nav>
+      <div class="footer__bottom">
+        <span>© 2024 ООО «ИТ Климат». Все права защищены.</span>
+        <span>ИНН 1684008470</span>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>© 2024 ООО «ИТ Климат». Все права защищены.</span>
-      <span>ИНН 1684008470</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
-<script type="module" src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    crossorigin="anonymous"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
