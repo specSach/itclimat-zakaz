@@ -481,6 +481,78 @@
     </div>
   </footer>
 
+  <!-- ═══════════════════ COOKIE BANNER ═══════════════════ -->
+  <div class="cb" data-cookie-banner>
+    <div class="cb__widget">
+      <div class="cb__banner">
+        <div class="cb__title">Мы используем cookie</div>
+        <div class="cb__text">
+          Мы используем cookie-файлы для корректной работы сайта.
+          Нажимая «Принять», вы соглашаетесь с нашей
+          <a href="cookie.html" target="_blank" rel="noopener noreferrer">Политикой использования cookie</a>.
+        </div>
+        <div class="cb__buttons">
+          <button class="cb__btn cb__btn--primary cb__accept-btn" type="button">Принять</button>
+          <button class="cb__btn cb__btn--ghost cb__settings-btn" type="button">Настройки</button>
+        </div>
+      </div>
+
+      <div class="cb__settings" aria-hidden="true">
+        <button class="cb__settings-header" type="button">
+          <span class="cb__settings-arrow" aria-hidden="true">←</span>
+          <span>Мы используем cookie</span>
+        </button>
+        <div class="cb__settings-body">
+          <div class="cb__settings-title">Технические cookie</div>
+          <div class="cb__settings-text">
+            Cookies, необходимые для корректной работы сайта, всегда включены.
+            Остальные cookies можно настроить.
+          </div>
+          <form class="cb__categories" action="#">
+            <div class="cb__category">
+              <button class="cb__category-header" type="button" data-category-toggle>
+                <span class="cb__plus" aria-hidden="true"></span>
+                <span class="cb__category-title">Обязательные cookie</span>
+              </button>
+              <div class="cb__category-toggle">
+                <span class="cb__toggle-text cb__toggle-text--always">Всегда активно</span>
+              </div>
+              <div class="cb__category-body">
+                Эти cookie обеспечивают базовую работу сайта и не могут быть отключены.
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="cb__settings-footer">
+          <button class="cb__btn cb__btn--primary cb__confirm-btn" type="button">Подтвердить</button>
+        </div>
+      </div>
+
+      <button class="cb__widget-button" type="button" aria-label="Открыть настройки cookie">
+        <svg class="cb__icon cb__icon--cookie" viewBox="0 0 30 30" aria-hidden="true">
+          <defs>
+            <mask id="cb-bite">
+              <rect width="30" height="30" fill="white"/>
+              <circle cx="23" cy="7" r="7" fill="black"/>
+            </mask>
+          </defs>
+          <!-- Тело печеньки с откусом -->
+          <circle cx="14" cy="16" r="11" fill="rgba(255,255,255,.9)" mask="url(#cb-bite)"/>
+          <!-- Шоколадные крошки -->
+          <circle cx="9.5"  cy="13.5" r="1.7"  fill="rgba(131,1,255,.32)"/>
+          <circle cx="15"   cy="14"   r="1.5"  fill="rgba(131,1,255,.32)"/>
+          <circle cx="10.5" cy="19.5" r="1.4"  fill="rgba(131,1,255,.32)"/>
+          <circle cx="16.5" cy="21"   r="1.3"  fill="rgba(131,1,255,.32)"/>
+          <!-- Крупинки у надкуса -->
+          <circle cx="17.5" cy="5"    r="1.1"  fill="rgba(255,255,255,.6)"/>
+          <circle cx="22"   cy="14"   r="0.85" fill="rgba(255,255,255,.45)"/>
+        </svg>
+        <svg class="cb__icon cb__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6L18 18M18 6L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
   <script src="js/vendor/vendor.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>

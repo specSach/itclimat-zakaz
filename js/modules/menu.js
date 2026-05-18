@@ -6,6 +6,7 @@
   const burger   = document.querySelector('.header__burger');
   const menu     = document.querySelector('.mobile-menu');
   const closeBtn = document.querySelector('.mobile-menu__close');
+  const cb       = document.querySelector('.cb');          /* куки-виджет */
   if (!burger || !menu) return;
 
   const open = () => {
@@ -14,6 +15,7 @@
     document.body.style.overflow = 'hidden';
     burger.setAttribute('aria-expanded', 'true');
     burger.setAttribute('aria-label', 'Закрыть меню');
+    if (cb) cb.classList.add('cb--hidden');                /* скрываем куки */
   };
 
   const close = () => {
@@ -22,6 +24,7 @@
     document.body.style.overflow = '';
     burger.setAttribute('aria-expanded', 'false');
     burger.setAttribute('aria-label', 'Открыть меню');
+    if (cb) cb.classList.remove('cb--hidden');             /* показываем куки */
   };
 
   burger.addEventListener('click', () =>

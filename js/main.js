@@ -10,6 +10,7 @@
      reveal.js           — scroll-reveal (IntersectionObserver)
      hero.js             — GSAP-анимация входа + параллакс
      scroll-top.js       — кнопка «наверх» с кольцом прогресса
+     cookie-banner.js    — уведомление о cookie
    ============================================================ */
 
 /* ── Модули ── */
@@ -18,3 +19,4 @@ import './modules/menu.js';
 import './modules/reveal.js';
 import './modules/hero.js';
 import './modules/scroll-top.js';
+import './modules/cookie-banner.js';

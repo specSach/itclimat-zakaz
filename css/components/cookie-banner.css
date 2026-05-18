@@ -1,0 +1,463 @@
+/* ============================================================
+   ITCLIMAT · COOKIE BANNER
+   ============================================================ */
+
+.cb,
+.cb * {
+  box-sizing: border-box;
+}
+
+.cb {
+  position: fixed;
+  right: 28px;
+  bottom: 92px; /* над кнопкой scroll-top (28 + 48 + 16px зазор) */
+  z-index: 100001;
+  font-family: var(--font);
+  color: var(--c-text);
+  transition: opacity var(--t), transform var(--t), visibility var(--t);
+}
+
+/* Скрываем виджет при открытом мобильном меню */
+.cb--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+.cb__widget {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ── Панели ── */
+.cb__banner,
+.cb__settings {
+  display: none;
+  background: var(--c-bg);
+  box-shadow: 0 8px 40px rgba(131,1,255,.13), 0 2px 10px rgba(0,0,0,.07);
+  border-radius: var(--r-card);
+  margin-bottom: 10px;
+}
+
+.cb__banner {
+  max-width: 360px;
+  max-height: calc(100vh - 140px);
+  padding: 22px 22px 20px;
+  overflow-y: auto;
+}
+
+.cb__banner.is-visible,
+.cb__settings.is-visible {
+  display: block;
+}
+
+/* ── Текст банера ── */
+.cb__title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.cb__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--c-text-2);
+}
+
+.cb__text a {
+  color: var(--c-primary);
+  text-decoration: none;
+}
+
+.cb__text a:hover {
+  text-decoration: underline;
+}
+
+/* ── Кнопки ── */
+.cb__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.cb__btn {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  min-height: 36px;
+  padding: 10px 18px;
+  border-radius: var(--r-btn);
+  transition: transform var(--t), opacity var(--t), box-shadow var(--t);
+}
+
+.cb__btn:hover {
+  transform: translateY(-1px);
+}
+
+.cb__btn--primary {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: var(--shadow-btn);
+}
+
+.cb__btn--primary:hover {
+  box-shadow: 0 8px 28px rgba(131,1,255,.45);
+}
+
+.cb__btn--ghost {
+  background: transparent;
+  color: var(--c-text-2);
+  border: 1px solid var(--c-border);
+}
+
+/* ── Настройки ── */
+.cb__settings {
+  max-width: 340px;
+  width: 100%;
+  max-height: calc(100vh - 140px);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cb__settings.is-visible {
+  display: flex;
+}
+
+.cb__settings-header {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 15px 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--c-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  color: var(--c-text-2);
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: var(--r-card) var(--r-card) 0 0;
+}
+
+.cb__settings-arrow {
+  font-size: 16px;
+  color: var(--c-primary);
+}
+
+.cb__settings-body {
+  padding: 0 18px;
+  overflow: auto;
+}
+
+.cb__settings-title {
+  margin: 18px 0 8px;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.cb__settings-text {
+  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--c-text-2);
+}
+
+.cb__categories {
+  margin: 0 0 20px;
+}
+
+.cb__category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0 14px;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.cb__category:first-child {
+  border-top: 1px solid var(--c-border);
+}
+
+.cb__category-header {
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font);
+}
+
+.cb__plus {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cb__plus::before,
+.cb__plus::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: var(--c-text);
+  transform: translate(-50%, -50%);
+  transition: transform var(--t), opacity var(--t);
+}
+
+.cb__plus::before { width: 100%; height: 1px; }
+.cb__plus::after  { width: 1px;  height: 100%; }
+
+.cb__category.is-open .cb__plus::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  opacity: 0;
+}
+
+.cb__category-title {
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.cb__category-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cb__toggle-text {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--c-gray);
+}
+
+.cb__toggle-text--always {
+  color: var(--c-primary);
+  font-weight: 600;
+}
+
+.cb__toggle-label  { display: inline-flex; align-items: center; cursor: pointer; }
+.cb__toggle-input  { position: absolute; opacity: 0; pointer-events: none; }
+
+.cb__toggle-ui {
+  width: 44px;
+  height: 22px;
+  border-radius: 999px;
+  background: var(--c-card);
+  position: relative;
+  transition: background-color var(--t);
+}
+
+.cb__toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+  transition: transform var(--t);
+}
+
+.cb__toggle-input:checked + .cb__toggle-ui {
+  background: rgba(131,1,255,.28);
+}
+
+.cb__toggle-input:checked + .cb__toggle-ui .cb__toggle-knob {
+  transform: translateX(22px);
+}
+
+.cb__category-body {
+  display: none;
+  flex-basis: 100%;
+  margin-top: 6px;
+  color: var(--c-text-2);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.cb__category.is-open .cb__category-body { display: block; }
+
+.cb__settings-footer {
+  margin-top: auto;
+  padding: 14px 18px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,.05);
+  background: var(--c-bg);
+  border-radius: 0 0 var(--r-card) var(--r-card);
+}
+
+.cb__confirm-btn { width: 100%; }
+
+/* ── Кнопка-триггер ── */
+.cb__widget-button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: var(--shadow-btn);
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--t), box-shadow var(--t);
+  flex-shrink: 0;
+}
+
+.cb__widget-button:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 8px 32px rgba(131,1,255,.45);
+}
+
+.cb__icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 58%;
+  height: 58%;
+  transition: transform var(--t), opacity var(--t), visibility var(--t);
+}
+
+.cb__icon--close {
+  transform: scale(0.2);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cb.is-active .cb__icon--cookie {
+  transform: scale(0.2);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cb.is-active .cb__icon--close {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ── Адаптив ── */
+@media (max-width: 640px) {
+  .cb {
+    left: 10px;
+    right: 10px;
+    bottom: 82px;
+  }
+
+  /* Кнопка-печенька выровнена по правому краю как scroll-top (right: 28px) */
+  .cb__widget {
+    padding-right: 18px; /* 10px (.cb right) + 18px = 28px от края — совпадает со scroll-top */
+  }
+
+  .cb__banner,
+  .cb__settings {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cb__banner {
+    max-height: 52vh;
+    padding: 14px 14px 16px;
+    overflow-y: auto;
+  }
+
+  .cb__settings {
+    max-height: 58vh;
+  }
+
+  .cb__title {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .cb__text {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .cb__buttons {
+    margin-top: 10px;
+    gap: 6px;
+    flex-direction: column;
+  }
+
+  .cb__btn {
+    width: 100%;
+    min-height: 34px;
+    padding: 9px 14px;
+    font-size: 12px;
+  }
+
+  .cb__settings-header {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .cb__settings-title {
+    font-size: 15px;
+    margin: 12px 0 6px;
+  }
+
+  .cb__settings-text {
+    font-size: 12px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+
+  .cb__settings-body {
+    padding: 0 14px;
+  }
+
+  .cb__settings-footer {
+    padding: 10px 14px;
+  }
+
+  .cb__widget-button {
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.06);
+  }
+
+  .cb__widget-button:hover {
+    box-shadow: 0 8px 24px rgba(131,1,255,.28);
+  }
+}
+
+/* ── 576px — синхронизация с scroll-top (44px, right: 16px, bottom: 18px) ── */
+@media (max-width: 576px) {
+  .cb {
+    bottom: 74px; /* 18px + 44px + 12px зазор */
+  }
+
+  .cb__widget {
+    padding-right: 6px; /* 10px (.cb right) + 6px = 16px от края — совпадает со scroll-top */
+  }
+
+  .cb__widget-button {
+    width: 44px;
+    height: 44px;
+  }
+}
