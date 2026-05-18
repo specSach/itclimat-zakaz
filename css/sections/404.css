@@ -1,18 +1,11 @@
 /* ============================================================
    ITCLIMAT · СТРАНИЦА 404
-   Автономные стили — не зависят от main.css
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap');
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body {
+/* ── Скоп страницы: height + overflow только для 404 ── */
+html.page-404,
+html.page-404 body {
   height: 100%;
-  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
-  background: #fff;
-  color: #111;
-  -webkit-font-smoothing: antialiased;
   overflow: hidden;
 }
 
@@ -45,7 +38,7 @@ html, body {
 }
 
 /* ── Страница ── */
-.page {
+.page-404-wrap {
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -63,7 +56,7 @@ html, body {
   font-weight: 900;
   line-height: .92;
   letter-spacing: -.04em;
-  background: linear-gradient(120deg, #b100c0 0%, #8301ff 55%, #c060ff 100%);
+  background: linear-gradient(120deg, var(--c-secondary) 0%, var(--c-primary) 55%, #c060ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -76,7 +69,7 @@ html, body {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 800;
   letter-spacing: -.02em;
-  color: #111;
+  color: var(--c-text);
   animation: fadeUp .55s ease .1s both;
 }
 
@@ -84,7 +77,7 @@ html, body {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 500;
-  color: rgba(0,0,0,.42);
+  color: var(--c-gray);
   max-width: 380px;
   line-height: 1.65;
   animation: fadeUp .55s ease .18s both;
@@ -102,7 +95,7 @@ html, body {
   border-radius: 50px;
   font-size: 14px;
   font-weight: 600;
-  color: rgba(0,0,0,.55);
+  color: var(--c-text-2);
   animation: fadeUp .55s ease .26s both;
 }
 .err-timer__count {
@@ -110,7 +103,7 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 28px; height: 28px;
-  background: linear-gradient(120deg, #b100c0 0%, #8301ff 100%);
+  background: var(--gradient);
   color: #fff;
   border-radius: 50%;
   font-size: 13px;
@@ -126,27 +119,27 @@ html, body {
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  background: linear-gradient(120deg, #b100c0 0%, #8301ff 100%);
+  background: var(--gradient);
   color: #fff;
-  font-family: inherit;
+  font-family: var(--font);
   font-size: 15px;
   font-weight: 700;
   border: none;
-  border-radius: 50px;
+  border-radius: var(--r-btn);
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 4px 24px rgba(131,1,255,.28);
-  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: var(--shadow-btn);
+  transition: transform var(--t), box-shadow var(--t);
   animation: fadeUp .55s ease .34s both;
 }
-.err-btn:hover        { transform: scale(1.04) translateY(-2px); box-shadow: 0 8px 36px rgba(131,1,255,.38); }
-.err-btn:active       { transform: scale(.98); }
-.err-btn__arrow       { transition: transform .2s ease; }
+.err-btn:hover         { transform: scale(1.04) translateY(-2px); box-shadow: 0 8px 36px rgba(131,1,255,.38); }
+.err-btn:active        { transform: scale(.98); }
+.err-btn__arrow        { transition: transform var(--t); }
 .err-btn:hover .err-btn__arrow { transform: translateX(4px); }
 
 /* ── Анимации ── */
-@keyframes codeIn    { from { opacity: 0; transform: scale(.75) translateY(30px); } to { opacity: 1; transform: none; } }
-@keyframes fadeUp    { from { opacity: 0; transform: translateY(18px); }            to { opacity: 1; transform: none; } }
+@keyframes codeIn     { from { opacity: 0; transform: scale(.75) translateY(30px); } to { opacity: 1; transform: none; } }
+@keyframes fadeUp     { from { opacity: 0; transform: translateY(18px); }            to { opacity: 1; transform: none; } }
 @keyframes blobDrift1 { 0%,100% { transform: translate(0,0)        scale(1);    } 50% { transform: translate(-30px,28px)  scale(1.07); } }
 @keyframes blobDrift2 { 0%,100% { transform: translate(0,0)        scale(1);    } 50% { transform: translate(24px,-22px)  scale(1.06); } }
 @keyframes blobDrift3 { 0%,100% { transform: translate(-50%,-50%) scale(1);    } 50% { transform: translate(-50%,-50%) scale(1.14); } }

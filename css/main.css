@@ -5,7 +5,8 @@
    Порядок важен: base → components → sections → utils
 
    base/
-     variables.css   — CSS-переменные + Google Fonts
+     fonts.css       — локальные @font-face (Manrope, /fonts/*.woff2)
+     variables.css   — CSS-переменные
      reset.css       — сброс, типографика, сетка, кнопки
 
    components/
@@ -22,6 +23,7 @@
      docs.css        — документация
      policy.css      — страницы политик
      it-activity.css — IT-деятельность
+     404.css         — страница 404
 
    utils/
      animations.css  — система scroll-reveal
@@ -29,6 +31,7 @@
    ============================================================ */
 
 /* ── Base ── */
+@import url('base/fonts.css');
 @import url('base/variables.css');
 @import url('base/reset.css');
 
@@ -47,6 +50,7 @@
 @import url('sections/docs.css');
 @import url('sections/policy.css');
 @import url('sections/it-activity.css');
+@import url('sections/404.css');
 
 /* ── Utils ── */
 @import url('utils/animations.css');
