@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc \"C:\\\\Users\\\\user\\\\Downloads\\\\Dogovor_oferta_klimat_podbor.docx\" -t plain)",
+      "Bash(pandoc \"C:/Users/user/Downloads/Dogovor_oferta_klimat_podbor.docx\" -t markdown)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
